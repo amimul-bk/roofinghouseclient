@@ -1,0 +1,23 @@
+@font-face {
+  font-family: hauora;
+  src: url(../public/Hauora-Regular.ttf);
+}
+
+@font-face {
+  font-family: hauora-light;
+  src: url(../public/Hauora-Light.ttf);
+}
+
+@font-face {
+  font-family: hauora-medium;
+  src: url(../public/Hauora-Medium.ttf);
+}
+
+@font-face {
+  font-family: hauora-semibold;
+  src: url(../public/Hauora-SemiBold.ttf);
+}
+
+* {
+  font-family: hauora;
+}

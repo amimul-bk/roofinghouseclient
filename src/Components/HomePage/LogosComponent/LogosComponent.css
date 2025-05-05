@@ -1,0 +1,103 @@
+/*  Scrolling the logos Section  */
+.logo-slider {
+    margin: 120px 6rem;
+}
+
+.slide-track {
+    margin: 0 auto;
+}
+
+.slide-track1 {
+    margin: 0 auto;
+    display: none;
+}
+
+.slide1 {
+    display: flex;
+    height: 300px;
+    padding: 0px 75px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 6px;
+    margin: 2rem;
+    border: 1px solid var(--Colors-Neutrals-400, #EFEFF1);
+    background: var(--Colors-Base-White, #FFF);
+    box-shadow: 0px 10px 15px -3px rgba(16, 24, 40, 0.10), 0px 4px 6px -4px rgba(16, 24, 40, 0.10);
+}
+
+.logo-width1 {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Hover effect on logo slides */
+.slide1:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 15px -3px rgba(16, 24, 40, 0.15), 0px 4px 6px -4px rgba(16, 24, 40, 0.15);
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 1400px) {
+    .logo-width1 {
+        max-width: 14rem;
+    }
+
+    .slide1 {
+        width: 100px;
+        height: 250px;
+        margin: 10px
+    }
+}
+
+
+@media only screen and (max-width: 1256px) {
+    .logo-slider {
+        margin: 70px 2rem;
+    }
+}
+
+@media only screen and (max-width: 967px) {
+    .logo-width1 {
+        width: 11rem;
+    }
+
+    .slide1 {
+        height: 200px;
+        margin: 10px
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .logo-width1 {
+        width: 8rem;
+    }
+
+    .slide1 {
+        height: 180px;
+        margin: 10px;
+        padding: 0px 25px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .slide-track {
+        display: none;
+    }
+    
+    .slide-track1 {
+        display: block;
+    }
+    .slide1 {
+        width: 40%;
+        height: 120px;
+        margin: 5px auto;
+        padding: 0px 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logo-width1 {
+        width: 100%;
+    }
+}

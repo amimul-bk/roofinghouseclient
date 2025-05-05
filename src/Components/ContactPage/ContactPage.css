@@ -1,0 +1,202 @@
+/* Font */
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../public/Hauora-Medium.ttf);
+}
+
+/* Contact Page Styles */
+.contact-page {
+    margin-top: 150px;
+}
+
+.contact-us {
+    border-radius: 3px;
+    margin: 3rem 2rem;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+/* Form Control Validation Styles */
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: #dee2e6;
+}
+
+.contact-sections {
+    background-color: #3D3B6D;
+    border: 1px solid #B22335;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15rem;
+}
+
+/* Fade In Animation Styles */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.address-text {
+    font-size: 20px;
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    margin-top: -5px;
+    margin-right: 1vh;
+}
+
+.contact-text {
+    font-size: 22px;
+    font-family: hauora-medium;
+}
+
+.contact-form {
+    margin: 3rem 2rem;
+}
+
+.label {
+    margin-top: 2rem;
+}
+
+.form-control {
+    line-height: 2.5rem;
+}
+
+.contact-form-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+/* Error Message Styles */
+.errormessage {
+    text-align: center;
+    margin: 20px 0px 0px;
+    color: red;
+    font-size: large;
+}
+
+/* Map Styles */
+.map-style {
+    width: 100%;
+    height: 100%;
+}
+
+/* Loading Styles */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+}
+
+.loading-indicator {
+    .spinner-border {
+        color: #007bff;
+    }
+}
+
+/* Responsive media queries */
+@media only screen and (min-width: 946px) and (max-width: 1100px) {
+    .contact-sections {
+        width: 26rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 946px) {
+    .contact-sections {
+        width: 22.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-us {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 747px) and (max-width: 799px) {
+    .contact-sections {
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-us {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-form {
+        display: block;
+    }
+
+    .map-style {
+        margin-top: 2rem;
+        width: 100%;
+        height: 25rem;
+    }
+
+    .contact-us {
+        margin: 1rem;
+    }
+
+    .address-text {
+        margin-left: 0px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 746px) {
+    .contact-sections-row {
+        display: block;
+    }
+
+    .contact-sections {
+        margin-bottom: 1rem;
+        text-align: center;
+        height: 10.5rem;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .contact-form {
+        margin: 3rem 0.5rem;
+    }
+
+    .contact-us {
+        margin: 3rem 0.5rem;
+    }
+
+    .names-roww {
+        display: block;
+    }
+
+    .contact-page {
+        margin-top: 100px;
+    }
+}

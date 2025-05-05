@@ -1,0 +1,418 @@
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../public/Hauora-Medium.ttf);
+}
+
+/* Video Section */
+.background-video-container {
+    position: relative;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    margin-top: 70px;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.content-overlay {
+    color: #fff;
+    margin-left: 5rem;
+    z-index: 1;
+    width: 48%;
+}
+
+.main-heading {
+    font-size: calc(2rem + 2vw);
+    font-family: hauora-medium;
+}
+
+.main-text {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding: 1vh 0px;
+}
+
+.estimate-btn {
+    border-radius: 0px;
+    background-color: #B22335;
+    border: 1px solid #B22335;
+    font-size: 1.3rem;
+    padding: 16px 32px 19px 32px;
+    margin: 2px;
+}
+
+.estimate-btn:hover {
+    background-color: #3D3B6D !important;
+    border-color: #3D3B6D !important;
+    box-shadow: 0px 20px 25px -5px rgba(16, 24, 40, 0.10), 0px 8px 10px -6px rgba(16, 24, 40, 0.10);
+    padding: 18px 34px 21px 34px;
+    margin: 0px;
+}
+
+.model-form {
+    padding: 1rem 2rem;
+}
+
+.toast-div {
+    display: flex;
+}
+
+/*   About us    */
+.about-section {
+    background-image: url('../../assets/HomePageImages/AboutBackground.jpg');
+    background-size: cover;
+    padding: 4rem 0rem 0rem 5rem;
+    width: 100%;
+    position: relative;
+}
+
+.about-col {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.about-heading {
+    font-size: calc(1.2rem + 1.3vw);
+    font-family: hauora-medium;
+}
+
+.about-text {
+    font-size: 20px;
+    padding: 1vh 0px;
+}
+
+.about-img {
+    width: 60rem;
+    height: 42rem;
+    margin-right: -10px;
+}
+
+/*      Download App   */
+.app-section {
+    background-color: #F5F5F5;
+    padding: 7vh 5rem;
+    display: flex;
+    margin: 0px !important;
+}
+
+.app-heading {
+    font-size: calc(1.2rem + 1.5vw);
+    font-family: hauora-medium;
+}
+
+.app-text {
+    padding: 1vh 0vh;
+    font-size: calc(1rem + 0.3vw);
+}
+
+.store-heading {
+    font-size: 1.8rem;
+}
+
+.apps-store {
+    display: flex;
+}
+
+.app-icons {
+    padding: 2vh 10vh 0px 0px;
+}
+
+.mobile-img {
+    margin-top: 2.3rem;
+}
+
+.mobile-img-view {
+    display: none;
+}
+
+.store-text {
+    letter-spacing: 0.36px;
+    font-size: 18px;
+    padding-top: 1vh
+}
+
+.appstore-toast {
+    border-radius: 0px;
+    position: relative;
+    z-index: 1000;
+    height: 5rem;
+    width: 10rem;
+    margin-left: -4rem;
+    margin-top: 1rem
+}
+
+/* Responsive media queries */
+@media only screen and (min-width: 1920px) {
+    .about-img {
+        width: 50rem;
+        height: 37rem;
+    }
+}
+
+@media only screen and (min-width: 1256px) and (max-width: 1500px) {
+    .about-img {
+        width: 48rem;
+        height: 38rem;
+    }
+
+    .about-section {
+        padding-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1256px) {
+    .about-img {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+    }
+
+    .about-div {
+        margin-bottom: 2vh;
+    }
+
+    .about-section {
+        padding-left: 2rem;
+    }
+
+    .app-icons {
+        padding: 2vh 5vh 0px 0px;
+    }
+    .mobile-img {
+        margin-left: -3rem;
+    }
+}
+
+@media (max-width: 900px),
+(min-width: 778px) and (max-width: 900px) {
+    .content-overlay {
+        margin-left: 2rem;
+        width: 70%;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .row-about {
+        display: block;
+    }
+
+    .about-section {
+        padding-left: 2rem;
+    }
+
+    .app-section {
+        padding: 7vh 2rem;
+    }
+
+    .mobile-img {
+        margin-left: -5rem;
+    }
+}
+
+@media (max-width: 778px),
+(min-width: 675px) and (max-width: 778px) {
+    .content-overlay {
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+    .store-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 545px) and (max-width: 675px) {
+    .mobile-img {
+        width: 6rem;
+    }
+}
+
+@media (max-width: 675px) {
+    .toast-div {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 545px) and (max-width: 778px) {
+    .mobile-img {
+        display: none;
+    }
+
+    .mobile-img-view {
+        display: block;
+        width: 7rem;
+        margin-top: -3.5rem;
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 678px) {
+    .appstore-toast {
+        position: absolute;
+        right: 32%;
+        margin-left: 0rem;
+    }
+
+    .app-icons {
+        padding: 2vh 2vh 0px 0px;
+    }
+
+    .mobile-img-view {
+        display: block;
+        width: 7rem;
+        margin-top: -3.5rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .appstore-toast {
+        right: 30%;
+    }
+
+    .mobile-img-view {
+        width: 7rem;
+        margin-top: -3.5rem;
+        margin-left: 9rem;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 545px) {
+    .mobile-img {
+        display: none;
+    }
+
+    .mobile-img-view {
+        width: 5rem;
+        margin-top: -2rem;
+        margin-left: 9rem;
+    }
+
+    .appstore-toast {
+        right: 23%;
+    }
+}
+
+
+@media only screen and (max-width: 545px) {
+    .about-section {
+        padding-left: 1rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-section:before {
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        width: 80%;
+        height: 60%;
+        background-image: url('../../assets/HomePageImages/AboutHouse.png');
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .about-text {
+        color: var(--Colors-Text-Light-Body, #323539);
+    }
+
+    .estimate-btn {
+        font-size: 1rem;
+        padding: 15px 28px 18px 28px;
+        margin: 2px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .appstore-toast {
+        right: 18%;
+        margin-top: 8rem;
+    }
+
+    .mobile-view-none {
+        display: none;
+    } 
+    .mobile-img-view {
+        margin-left: 6rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .mobile-img-view {
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .about-section:before {
+        top: 60%;
+        left: 10%;
+        width: 90%;
+        height: 40%;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .app-section {
+        padding: 7vh 15px;
+    }
+
+    .app-icons {
+        padding: 2vh 2vh 0px 0px;
+    }
+
+    .appstore-toast {
+        right: 20%;
+        margin-top: 8rem;
+    }
+    .mobile-img-view{
+        width: 5rem;
+        margin-top: 0px;
+    }
+    .mobile-img-view {
+        margin-left: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 351px) {
+    .about-section {
+        padding-left: 5px;
+    }
+
+    .content-overlay {
+        margin-left: 1rem;
+    }
+
+    .app-icons {
+        padding: 2vh 2vh 0px 0px;
+    }
+
+    .store-text {
+        font-size: 15px;
+    }
+    .mobile-img-view {
+        margin-left: 0rem;
+    }
+}

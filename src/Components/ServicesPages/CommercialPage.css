@@ -1,0 +1,113 @@
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../public/Hauora-Medium.ttf);
+}
+
+.commercial-page-heading {
+    font-size: calc(1rem + 1vw);
+    font-family: hauora-medium;
+    margin-bottom: 1rem;
+}
+
+.commercial-page-heading1 {
+    font-size: calc(1.2rem + 1.3vw);
+    font-family: hauora-medium;
+    margin-bottom: 1rem;
+    margin-left: 8px;
+}
+
+.process-heading-step {
+    font-size: calc(1rem + 0.8vw);
+    font-family: hauora-medium;
+    margin-top: 1.5rem;
+    color: var(--Colors-Secondary-500-Default, #3D3B6D);
+}
+
+.process-heading-step1 {
+    font-size: calc(1rem + 0.8vw);
+    font-family: hauora-medium;
+    margin: 10px 0px;
+}
+
+.process-step-img{
+    border-radius: 5px;
+}
+
+.text-div{
+    width: 100%;
+}
+
+.steps-row{
+    margin: 0px;
+}
+
+.empty-col{
+    margin: 5vh
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 1990px) {
+    .empty-col{
+        margin: 2vh
+    }
+    .text-div{
+        width: 45rem;
+    }
+    .commercial-page-heading1 {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .process-step-img, .text-div{
+        width: 38rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .process-step-img, .text-div{
+        width: 33rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .process-step-img, .text-div{
+        width: 30rem;
+    }
+    .empty-col{
+        margin: 1vh
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .process-step-img, .text-div{
+        width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .process-step-img, .text-div{
+        width: 22rem;
+    }
+}
+
+@media only screen and (max-width: 778px) {
+    .process-step-img, .text-div{
+        width: 38rem;
+    }
+    .steps-row{
+        flex-direction: column;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .process-step-img, .text-div{
+        width: 33rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .process-step-img, .text-div{
+        width: 100%;
+    }
+}

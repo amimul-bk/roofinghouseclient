@@ -1,0 +1,87 @@
+.text-justified {
+    text-align: justify;
+  }
+  .font-12 {
+    font-size: 12px;
+  }
+  
+  /* custom underline */
+  .custom-underline .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ff3b3b;
+  }
+  .custom-underline .line {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .link-hover:hover {
+    color: #b22335 !important;
+  }
+  .social-icon:hover {
+    background-color: #b22335 !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  .secondColor {
+    background-color: #131010;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   gap: 10px;
+  }
+  .colOne{
+    grid-column: span 2;
+  }
+  
+  .custom-hover,
+  .custom-hover p,
+  .custom-hover a {
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+  .custom-hover:hover,
+  .custom-hover:hover p,
+  .custom-hover:hover a {
+    color: #b22335 !important;
+  }
+  @media (max-width: 1200.98px){
+    .colOne{
+      grid-column: span 1;
+    }
+    .secondColor {
+     gap: 5px;
+     grid-template-columns: repeat(4,1fr);
+    }
+  }
+  /* Responsive text align fallback */
+  @media (max-width: 767.98px) {
+    .text-md-left {
+      text-align: left !important;
+    }
+    .text-md-center {
+      text-align: center !important;
+    }
+    .firstfootertext{
+        max-width: 300px;
+    }
+    .secondColor {
+      gap: 5px;
+      grid-template-columns: repeat(2, 1fr); /*  ২ */
+    }
+  }
+  @media (max-width: 768px) { /* ট্যাব ডিভাইস */
+    .secondColor {
+      
+      gap: 5px;
+        grid-template-columns: repeat(2, 1fr); /* ট্যাবে ২ কলাম */
+    }
+}
+
+@media (max-width: 480px) { /* মোবাইল ডিভাইস */
+    .secondColor {
+        grid-template-columns: 1fr; /* মোবাইলে ১ কলাম */
+    }
+}
+ 

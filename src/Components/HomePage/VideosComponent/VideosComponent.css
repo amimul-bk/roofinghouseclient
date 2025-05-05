@@ -1,0 +1,250 @@
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../../public/Hauora-Medium.ttf);
+}
+
+/*  Videos carousel Section  */
+.videos-section {
+    margin: 0rem 0rem 0rem 4rem;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.videos-heading {
+    font-size: calc(1.75rem + 1.5vw);
+    font-family: hauora-medium;
+}
+
+.bar-arrows {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 20rem;
+    height: 2px;
+    margin-top: 1rem;
+    background-color: #A1A4AC;
+}
+
+.video-carousel {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel-video {
+    display: flex;
+}
+
+.videos-slide {
+    width: 48rem;
+    height: 30rem;
+}
+
+.arrows {
+    margin: 0rem 2rem;
+    display: flex;
+    justify-content: right;
+}
+
+.arrow {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5vh 1vh;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.video-arrows {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows1 {
+    margin: 1vh 2rem 0rem 2rem;
+    display: flex;
+    height: 36px;
+}
+
+.arrowss {
+    display: none;
+}
+
+.arrow1 {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5vh 1vh;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.arrow:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: rgb(0, 0, 0);
+}
+
+.disabled-icon {
+    color: rgba(140, 140, 140, 0.697);
+    border-color: rgba(140, 140, 140, 0.697);
+    cursor: default;
+}
+
+.disabled-icon:hover {
+    background-color: rgba(140, 140, 140, 0.697) !important;
+    color: white;
+    border-color: rgba(140, 140, 140, 0.697) !important;
+}
+
+.play-icon {
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Modal CSS */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.video-modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.videos-modal-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Responsive media queries */
+@media (min-width: 778px) and (max-width: 900px) {
+    .videos-slide {
+        width: 38rem;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 778px),
+(min-width: 675px) and (max-width: 778px) {
+    .videos-section {
+        margin: 5rem 0rem 0rem 0rem;
+    }
+
+    .videos-slide {
+        width: 28rem;
+        height: 18rem;
+    }
+
+    .video-container {
+        margin: 0px 2vh;
+    }
+
+    .bar-arrows {
+        margin-left: 1rem
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .arrowss {
+        display: block;
+    }
+
+    .videos-heading {
+        margin-left: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 545px) {
+    .videos-slide {
+        width: 24rem;
+        height: 13rem;
+        margin-top: 2vh;
+    }
+
+    .play-icon-img {
+        width: 60px;
+    }
+
+    .bar-arrows {
+        margin-top: 1rem
+    }
+
+    .videos-heading {
+        font-size: calc(1.8rem + 1vw);
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .videos-slide {
+        width: 21rem;
+        height: 10rem;
+        margin-top: 2vh;
+    }
+
+    .video-container {
+        margin: 0px 5px;
+    }
+
+    .play-icon-img {
+        width: 60px;
+    }
+
+    .bar-arrows {
+        margin-top: 1rem
+    }
+
+    .videos-heading {
+        font-size: calc(1.4rem + 1vw);
+        margin-top: 1vh;
+    }
+}
+
+@media only screen and (max-width: 352px) {
+    .videos-slide {
+        width: 18rem;
+        height: 10rem;
+    }
+
+    .video-container {
+        margin: 0px 10px;
+    }
+
+    .arrows1 {
+        margin-right: 10px;
+    }
+
+    .videos-heading {
+        font-size: calc(1.2rem + 1vw);
+        margin-top: 1.3vh;
+    }
+}

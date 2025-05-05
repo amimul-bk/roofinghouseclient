@@ -1,0 +1,155 @@
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../public/Hauora-Medium.ttf);
+}
+
+.projects-main {
+    margin: 150px 6rem 0px;
+    font-family: hauora-medium;
+}
+
+.projects-main1 {
+    margin: 70px auto 0px;
+    padding: 0px 6rem;
+    font-family: hauora-medium;
+    width: 100%;
+    max-width: 100%;
+}
+
+.projects-us {
+    font-family: hauora-medium;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+.projects-page-text {
+    font-size: 20px;
+}
+
+.project-col {
+    max-width: 98%;
+    width: 45%;
+    padding-left: 0;
+    padding-right: 5rem;
+}
+
+.play-icon1 {
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+}
+
+.project-para {
+    margin-bottom: 5px;
+}
+
+.project-heading {
+    font-size: 30px;
+    font-family: hauora-medium;
+    color: #3D3B6D;
+}
+
+.project-card{
+    height: 100%;
+}
+
+/* Style the dots in the Slider */
+.project-card .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Increase the size of the dots in CardsComponent */
+.project-card .slick-dots li button:before {
+    font-size: 11px !important;
+    opacity: 1 !important;
+    color: #fff !important;
+}
+
+.project-card .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #B22335 !important;
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 1400px) {
+    .play-icon1 {
+        top: 25%; 
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .projects-main {
+        margin: 150px 2rem 0px;
+    }
+    .projects-main1 {
+        padding: 0px 2rem;
+    }
+    .project-heading{
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .play-icon-img1 {
+        width: 60px;
+    }
+    .play-icon1 {
+        top: 24%; 
+    }
+    .project-col{
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .play-icon1 {
+        top: 17%; 
+    }
+    .project-col{
+        padding-right: 1rem;
+    }
+    .projects-page-text{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .projects-main {
+        margin: 150px 1rem 0px;
+    }
+    .projects-main1{
+        display: block;
+        margin: 0px auto;
+    }
+    .project-col{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .play-icon1 {
+        top: 25%; 
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .projects-main {
+        margin: 100px 10px 0px;
+    }
+    .projects-main1 {
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .play-icon1 {
+        top: 20%; 
+    }
+}

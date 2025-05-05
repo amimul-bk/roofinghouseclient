@@ -1,0 +1,16 @@
+.window-mid-heading {
+    font-size: 22px;
+    font-family: hauora-medium;
+}
+
+.windows-main-image {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 575px) {
+    .gutters-main-image {
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,119 @@
+.key-heading {
+    font-size: calc(1.2rem + 1.2vw);
+    font-family: hauora-medium;
+    margin: 1rem 0px;
+}
+
+.key-heading1 {
+    font-size: calc(0.9rem + 0.8vw);
+    font-family: hauora-medium;
+    margin: 1rem 0px;
+}
+
+.key-row {
+    margin: 2rem 0px 0px;
+}
+
+.siding-row {
+    margin: 4rem auto;
+}
+
+.siding-card {
+    border: none;
+    margin: 0px auto;
+}
+
+.siding-col-heading {
+    font-size: 25px;
+    font-family: hauora-medium;
+    margin: 1rem 0px;
+}
+
+.siding-body {
+    background-color: transparent;
+    padding: 1rem 5px 0rem 0rem;
+}
+
+.siding-experience-text {
+    margin: 0px;
+}
+
+.elevate-col {
+    margin: 2rem 2rem 0px 2rem;
+}
+
+.siding-page-text {
+    font-size: 20px;
+    line-height: 3vh;
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 1800px) {
+    .elevate-col {
+        margin: 2rem 0rem 0px 0rem;
+    }
+
+    .siding-page-text {
+        line-height: 150%;
+        letter-spacing: 0.44px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .siding-card {
+        width: 22rem;
+    }
+
+    .siding-experience-text {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .siding-card {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 687px) {
+    .siding-card {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .siding-card {
+        width: 14rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .siding-page-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .siding-card {
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 464px) {
+    .siding-card {
+        width: 22rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .siding-card {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .siding-card {
+        width: 17rem;
+    }
+}
