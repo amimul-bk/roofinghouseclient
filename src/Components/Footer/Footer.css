@@ -29,7 +29,7 @@
     background-color: #131010;
    display: grid;
    grid-template-columns: repeat(5,1fr);
-   gap: 10px;
+   
   }
   .colOne{
     grid-column: span 2;
@@ -51,7 +51,7 @@
       grid-column: span 1;
     }
     .secondColor {
-     gap: 5px;
+     
      grid-template-columns: repeat(4,1fr);
     }
   }
