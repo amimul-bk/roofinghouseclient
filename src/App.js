@@ -12,8 +12,8 @@ import WindowsPage from './Components/ServicesPages/WindowsPage';
 import ProjectsPage from './Components/ProjectsPage/ProjectsPage';
 import SuccessPage from './Components/ContactPage/SuccessPage';
 import ReviewsPage from './Components/ReviewsPage/ReviewsPage';
-import { MainHeader } from './Components/MainHeader/MainHeader';
-// import MainHeader from './Components/MainHeader/MainHeader';
+// import { MainHeader } from './Components/MainHeader/MainHeader';
+import MainHeader from './Components/MainHeader/MainHeader';
 
 function App() {
   return (

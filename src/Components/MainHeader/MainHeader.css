@@ -1,3 +1,24 @@
+.getbtn{
+  font-size: 15px;
+  
+}
+.logoImg{
+  width: 140px;
+}
+/* button  */
+.custom-btn {
+  background-color: #b22335 !important;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(7, 7, 7, 0.3);
+  transition: all 0.3s ease-in-out;
+  }
+
+.custom-btn:hover {
+  background-color: #3D3B6D !important;
+  box-shadow: 0 8px 20px #3D3B6D !important;
+  transform: scale(1.05);
+ }
+
 /* Smooth collapse for mobile menu */
 .collapsing {
     transition: height 0.3s ease;
@@ -54,6 +75,9 @@
     animation: none !important;
     margin-top: 0.5rem;
   }
+  .logoImg{
+    width: 120px;
+  }
 
 }
 
@@ -64,5 +88,20 @@ body, .navbar, .dropdown-menu, .nav-link, .btn {
 .navbar-nav .nav-link {
   padding: 0.5rem 1rem;
 }
+
+
+.triangle {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 0;
+  border-bottom: 10px solid #b22335; 
+  z-index: 1010;
+  }
 
 
