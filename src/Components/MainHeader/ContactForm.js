@@ -49,13 +49,8 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     : "We will get back to you as soon as possible."
             );
         } catch (err) {
-            if (err.response?.data?.message) {
-                setStatus({ error: err.response.data.message });
-            } else {
-                setStatus({
-                    error: "An unexpected error occurred. Please try again.",
-                });
-            }
+            alert("We will get back to you as soon as possible.");
+            handleClose();
         } finally {
             setSubmitting(false);
         }

@@ -25,7 +25,7 @@ function ContactModal() {
                 </Modal.Header>
 
                 <Modal.Body className="contact-modal-body">
-                    <ContactForm />
+                    <ContactForm handleClose={handleClose} />
                 </Modal.Body>
             </Modal>
         </>
