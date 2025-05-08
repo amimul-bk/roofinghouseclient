@@ -143,9 +143,10 @@ const MainHeader = () => {
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className='showNav'
+          >
             <Nav className="mx-auto">
-              <div className={`collapse navbar-collapse justify-content-center show`} id="navbarNav">
+              <div className={`collapse navbar-collapse justify-content-center show  `} id="navbarNav">
                 <ul className="navbar-nav text-center text-lg-start">
                   {renderDropdown("Residential", isResidentialOpen, setIsResidentialOpen, residential)}
                   {renderDropdown("Commercial", isCommercialOpen, setIsCommercialOpen, commercial)}
@@ -272,5 +273,3 @@ const MainHeader = () => {
 };
 
 export default MainHeader;
-
-
