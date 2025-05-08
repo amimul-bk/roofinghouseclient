@@ -1,0 +1,266 @@
+:root {
+    --irs-red: #c1272d;
+    --irs-red-dark: #9e1a26;
+    --irs-gray: #333333;
+    --irs-shadow: rgba(0, 0, 0, 0.1);
+    --nav-font: "Poppins", sans-serif;
+    --nav-size: 0.9rem;
+    --arrow-size: 24px;
+    --arrow-bar: 2px;
+}
+
+/* ── Navbar Base ───────────────────────────────────────────────────────── */
+
+.irs-navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 8px var(--irs-shadow);
+    font-family: var(--nav-font);
+    z-index: 1100;
+}
+
+.logoImg {
+    width: 140px;
+    transition: width 0.2s;
+}
+@media (max-width: 991px) {
+    .logoImg {
+        width: 120px;
+    }
+}
+
+.irs-nav .nav-link {
+    color: var(--irs-gray);
+    font-size: var(--nav-size);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.625rem 1rem;
+    transition: color 0.2s;
+}
+.irs-nav .nav-link:hover {
+    color: var(--irs-red) !important;
+}
+
+.cta-btn {
+    background-color: var(--irs-red);
+    color: #fff !important;
+    font-size: var(--nav-size);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all linear 0.3s;
+    text-transform: none;
+    cursor: pointer;
+}
+.cta-btn:hover {
+    background-color: var(--irs-red-dark) !important;
+    transform: scale(1.1);
+}
+
+/* Phone + Portal to the right */
+.call-portal {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+.phone-icon {
+    font-size: 1.1rem;
+}
+.phone-number {
+    color: white !important;
+    font-size: var(--nav-size);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* ── Mega‐Menu ────────────────────────────────────────────────────────────── */
+
+/* base menu panel */
+.mega-menu {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.mega-menu .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px var(--irs-shadow);
+    padding: 1.25rem 1.5rem 0 1.5rem;
+    overflow: visible;
+    min-width: 240px;
+    /* remove any old ::before here */
+}
+
+/* outer red triangle */
+.mega-menu .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom-color: var(--irs-red);
+    z-index: 1;
+}
+
+/* inner white triangle */
+.mega-menu .dropdown-menu::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 2;
+}
+
+.mega-dropdown-item-icon {
+    margin-right: 7px;
+    color: var(--irs-red);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* layout */
+.mega-content {
+    display: flex;
+    gap: 2rem;
+}
+.mega-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+/* enforce equal-height columns */
+.cols-1 .mega-col,
+.cols-2 .mega-col,
+.cols-3 .mega-col,
+.cols-4 .mega-col {
+    flex: 1 1 0;
+}
+
+/* item text */
+.mega-item {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: var(--irs-gray);
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+.mega-item:hover {
+    color: var(--irs-red);
+}
+
+/* footer CTA stripe */
+.mega-footer {
+    margin-top: 1.5rem;
+    padding: 0 1.5rem 1rem;
+}
+.mega-cta {
+    display: block;
+    background-color: var(--irs-red) !important;
+    color: #fff !important;
+    text-align: center;
+    padding: 0.75rem 0;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+.mega-cta-nav {
+    display: block;
+    background-color: var(--irs-red) !important;
+    color: #fff !important;
+    text-align: center;
+    padding: 0.75rem 0;
+    border: none !important;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background 0.2s, transform 0.2s;
+}
+.mega-cta:hover {
+    background-color: var(--irs-red-dark);
+    transform: scale(1.02);
+}
+
+@media (max-width: 991px) {
+    .scrollMobileNav {
+        height: 100vh;
+        width: auto;
+        overflow: hidden auto;
+    }
+    .mega-menu .dropdown-menu {
+        width: 100% !important;
+        left: 0;
+        transform: none;
+        padding: 0.75rem 1rem;
+    }
+    .mega-content {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .mega-footer {
+        padding: 0.75rem 1rem;
+    }
+}
+
+/*
+Instant Quote css
+*/
+.contact-modal-body {
+    padding: 0 !important;
+}
+
+.quote-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.quote-form .form-label {
+    font-weight: 500;
+}
+
+.quote-form .text-danger {
+    margin-left: 2px;
+}
+
+.quote-form .form-control {
+    border-radius: 4px;
+    padding: 0.75rem;
+}
+
+.quote-form .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(49, 132, 253, 0.25);
+}
+
+.quote-form .invalid-feedback {
+    display: block;
+}
+
+.submit-btn {
+    background: var(--irs-red) !important;
+    width: 100%;
+    padding: 10px 0 !important;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none !important;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
