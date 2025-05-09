@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import Button from "./Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaPhoneVolume } from "react-icons/fa6";
+
 import logo from "../../assets/Icon/Logollc.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
@@ -78,6 +78,7 @@ function chunk(items, cols) {
 }
 
 export default function Header() {
+    const isMobile = window.innerWidth <= 768;
     return (
         <Navbar expand="lg" sticky="top" className="irs-navbar">
             <Container>
@@ -87,7 +88,7 @@ export default function Header() {
 
                 <Navbar.Toggle aria-controls="irs-nav" />
                 <Navbar.Collapse id="irs-nav" className="scrollMobileNav">
-                    <Nav className="mx-auto irs-nav">
+                    <Nav className="mx-auto irs-nav" style={{ position: "relative" }}>
                         {Object.entries(menus).map(
                             ([label, { items, cols, cta }]) => {
                                 const columns = chunk(items, cols);
@@ -99,8 +100,13 @@ export default function Header() {
                                             .toLowerCase()
                                             .replace(/\s+/g, "-")}-dd`}
                                         menuClassName={`mega-menu cols-${cols}`}
-                                        align="start"
+
+                                        
                                     >
+
+                                        {!isMobile && <div className="dropdown-arrow" />}
+
+
                                         <div className="mega-content">
                                             {columns.map((col, i) => (
                                                 <div
@@ -125,9 +131,12 @@ export default function Header() {
                                         </div>
 
                                         <Button
-                                            buttonText={cta}
-                                            buttonType="nav"
-                                        />
+                                                buttonText={cta}
+                                                buttonType="nav"
+                                            />
+
+
+                                        
                                     </NavDropdown>
                                 );
                             }

@@ -3,7 +3,8 @@ import "./Header.css";
 
 const Button = ({ buttonText, buttonType }) => {
     return (
-        <div className="text-center">
+        
+        <div className="text-center ">
             <a
                 href="#"
                 className={`${
