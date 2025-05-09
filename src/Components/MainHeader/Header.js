@@ -40,11 +40,18 @@ const menus = {
             "Metal Roof",
             "Shingles roof",
             "Tile roof ",
+            
+        ],
+        cta: "Residential Services",
+    },
+      Others: {
+        cols: 1,
+        items: [
             "Siding Enhancements",
             "Gutter Systems",
             "Window Services",
         ],
-        cta: "Residential Services",
+        cta: "Others",
     },
     "Service Area": {
         cols: 3,
@@ -64,8 +71,9 @@ const menus = {
     Company: {
         cols: 1,
         items: ["About", "Projects", "Reviews", "Career With Us"],
-        cta: "Know More",
+        cta: "Company",
     },
+  
 };
 
 function chunk(items, cols) {
