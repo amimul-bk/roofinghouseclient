@@ -40,17 +40,12 @@ const menus = {
             "Metal Roof",
             "Shingles roof",
             "Tile roof ",
-            
         ],
         cta: "Residential Services",
     },
-      Others: {
+    Others: {
         cols: 1,
-        items: [
-            "Siding Enhancements",
-            "Gutter Systems",
-            "Window Services",
-        ],
+        items: ["Siding Enhancements", "Gutter Systems", "Window Services"],
         cta: "Others",
     },
     "Service Area": {
@@ -73,7 +68,6 @@ const menus = {
         items: ["About", "Projects", "Reviews", "Career With Us"],
         cta: "Company",
     },
-  
 };
 
 function chunk(items, cols) {
@@ -96,7 +90,7 @@ export default function Header() {
 
                 <Navbar.Toggle aria-controls="irs-nav" />
                 <Navbar.Collapse id="irs-nav" className="scrollMobileNav">
-                    <Nav className="mx-auto irs-nav" style={{ position: "relative" }}>
+                    <Nav className="mx-auto irs-nav">
                         {Object.entries(menus).map(
                             ([label, { items, cols, cta }]) => {
                                 const columns = chunk(items, cols);
@@ -108,12 +102,10 @@ export default function Header() {
                                             .toLowerCase()
                                             .replace(/\s+/g, "-")}-dd`}
                                         menuClassName={`mega-menu cols-${cols}`}
-
-                                        
                                     >
-
-                                        {!isMobile && <div className="dropdown-arrow" />}
-
+                                        {!isMobile && (
+                                            <div className="dropdown-arrow" />
+                                        )}
 
                                         <div className="mega-content">
                                             {columns.map((col, i) => (
@@ -139,12 +131,9 @@ export default function Header() {
                                         </div>
 
                                         <Button
-                                                buttonText={cta}
-                                                buttonType="nav"
-                                            />
-
-
-                                        
+                                            buttonText={cta}
+                                            buttonType="nav"
+                                        />
                                     </NavDropdown>
                                 );
                             }
