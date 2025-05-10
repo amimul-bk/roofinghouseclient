@@ -13,60 +13,81 @@ const menus = {
     Commercial: {
         cols: 1,
         items: [
-            "Commercial Roofing",
-            "“Free” Roof Inspections and Estimates",
-            "Roof Replacement",
-            "Roof Installation",
-            "Roof Repair & Maintenance",
-            "Emergency Roofing Services",
-            "Roof Tar-ping",
-            "TPO Roof",
-            "Metal Roof",
-            "Shingles Roof",
-            "Tile roof",
+            { label: "Commercial Roofing", href: "/commercial/roofing" },
+            {
+                label: "Free Roof Inspections & Estimates",
+                href: "/commercial/inspections",
+            },
+            { label: "Roof Replacement", href: "/commercial/replacement" },
+            { label: "Roof Installation", href: "/commercial/installation" },
+            { label: "Roof Repair & Maintenance", href: "/commercial/repair" },
+            {
+                label: "Emergency Roofing Services",
+                href: "/commercial/emergency",
+            },
+            { label: "Roof Tarping", href: "/commercial/tarping" },
+            { label: "TPO Roof", href: "/commercial/tpo" },
+            { label: "Metal Roof", href: "/commercial/metal" },
+            { label: "Shingles Roof", href: "/commercial/shingles" },
+            { label: "Tile Roof", href: "/commercial/tile" },
         ],
-        cta: "Commercial Services",
+        cta: { label: "Commercial Services", href: "/commercial" },
     },
     Residential: {
         cols: 1,
         items: [
-            "Residential Roofing",
-            "“Free” Roof Inspections & Estimates",
-            "Roof Replacement",
-            "Roof Installation",
-            "Roof Repair & Maintenance",
-            "Emergency Roofing Services",
-            "Roof Tar-ping",
-            "Metal Roof",
-            "Shingles roof",
-            "Tile roof ",
+            { label: "Residential Roofing", href: "/residential/roofing" },
+            {
+                label: "Free Roof Inspections & Estimates",
+                href: "/residential/inspections",
+            },
+            { label: "Roof Replacement", href: "/residential/replacement" },
+            { label: "Roof Installation", href: "/residential/installation" },
+            { label: "Roof Repair & Maintenance", href: "/residential/repair" },
+            {
+                label: "Emergency Roofing Services",
+                href: "/residential/emergency",
+            },
+            { label: "Roof Tarping", href: "/residential/tarping" },
+            { label: "Metal Roof", href: "/residential/metal" },
+            { label: "Shingles Roof", href: "/residential/shingles" },
+            { label: "Tile Roof", href: "/residential/tile" },
         ],
-        cta: "Residential Services",
+        cta: { label: "Residential Services", href: "/residential" },
     },
     Others: {
         cols: 1,
-        items: ["Siding Enhancements", "Gutter Systems", "Window Services"],
-        cta: "Others",
+        items: [
+            { label: "Siding Enhancements", href: "/others/siding" },
+            { label: "Gutter Systems", href: "/others/gutters" },
+            { label: "Window Services", href: "/others/windows" },
+        ],
+        cta: { label: "Others", href: "/others" },
     },
     "Service Area": {
         cols: 3,
         items: [
-            "Columbus, Ohio",
-            "Dublin, Ohio",
-            "Hilliard, Ohio",
-            "Powell, Ohio",
-            "Marysville, Ohio",
-            "Reynoldsburg, Ohio",
-            "Blacklick, Ohio",
-            "Gahanna, Ohio",
-            "Delaware, Ohio",
+            { label: "Columbus, Ohio", href: "/service-area/columbus" },
+            { label: "Dublin, Ohio", href: "/service-area/dublin" },
+            { label: "Hilliard, Ohio", href: "/service-area/hilliard" },
+            { label: "Powell, Ohio", href: "/service-area/powell" },
+            { label: "Marysville, Ohio", href: "/service-area/marysville" },
+            { label: "Reynoldsburg, Ohio", href: "/service-area/reynoldsburg" },
+            { label: "Blacklick, Ohio", href: "/service-area/blacklick" },
+            { label: "Gahanna, Ohio", href: "/service-area/gahanna" },
+            { label: "Delaware, Ohio", href: "/service-area/delaware" },
         ],
-        cta: "Service Area",
+        cta: { label: "Service Area", href: "/service-area" },
     },
     Company: {
         cols: 1,
-        items: ["About", "Projects", "Reviews", "Career With Us"],
-        cta: "Company",
+        items: [
+            { label: "About", href: "/company/about" },
+            { label: "Projects", href: "/company/projects" },
+            { label: "Reviews", href: "/company/reviews" },
+            { label: "Career With Us", href: "/company/careers" },
+        ],
+        cta: { label: "Company", href: "/company" },
     },
 };
 
@@ -80,11 +101,12 @@ function chunk(items, cols) {
 }
 
 export default function Header() {
-    const isMobile = window.innerWidth <= 768;
+  
+    const isMobile = window.innerWidth <= 1024;
     return (
-        <Navbar expand="lg" sticky="top" className="irs-navbar">
+        <Navbar expand='xl' sticky="top" className="irs-navbar">
             <Container>
-                <Navbar.Brand href="#">
+                <Navbar.Brand href="/">
                     <img src={logo} alt="IRS Logo" className="logoImg" />
                 </Navbar.Brand>
 
@@ -92,16 +114,17 @@ export default function Header() {
                 <Navbar.Collapse id="irs-nav" className="scrollMobileNav">
                     <Nav className="mx-auto irs-nav">
                         {Object.entries(menus).map(
-                            ([label, { items, cols, cta }]) => {
+                            ([menuLabel, { items, cols, cta }]) => {
                                 const columns = chunk(items, cols);
                                 return (
                                     <NavDropdown
-                                        key={label}
-                                        title={label}
-                                        id={`${label
+                                        key={menuLabel}
+                                        title={menuLabel}
+                                        id={`${menuLabel
                                             .toLowerCase()
                                             .replace(/\s+/g, "-")}-dd`}
-                                        menuClassName={`mega-menu cols-${cols}`}
+                                        menuClassName={`mega-menu cols-${isMobile ? 12 : cols}`}
+
                                     >
                                         {!isMobile && (
                                             <div className="dropdown-arrow" />
@@ -113,16 +136,16 @@ export default function Header() {
                                                     className="mega-col"
                                                     key={i}
                                                 >
-                                                    {col.map((it) => (
+                                                    {col.map((item) => (
                                                         <NavDropdown.Item
-                                                            href="#"
-                                                            key={it}
+                                                            href={item.href}
+                                                            key={item.label}
                                                             className="mega-item"
+                                                            // as={Link} to={item.href}
                                                         >
                                                             <IoIosArrowForward className="mega-dropdown-item-icon" />
-
                                                             <span className="item-text">
-                                                                {it}
+                                                                {item.label}
                                                             </span>
                                                         </NavDropdown.Item>
                                                     ))}
@@ -131,8 +154,9 @@ export default function Header() {
                                         </div>
 
                                         <Button
-                                            buttonText={cta}
+                                            buttonText={cta.label}
                                             buttonType="nav"
+                                            href={cta.href}
                                         />
                                     </NavDropdown>
                                 );
@@ -142,16 +166,10 @@ export default function Header() {
                         <Nav.Link href="/contact">Contact</Nav.Link>
                     </Nav>
 
-                    {/* <div className="d-flex align-items-center gap-3 call-portal cta-btn">
-                        <FaPhoneVolume className="phone-icon" />
-                        <a href="tel:+16143249797" className="phone-number">
-                            (614) 324-9797
-                        </a>
-                    </div> */}
-
                     <ContactModal />
                 </Navbar.Collapse>
             </Container>
         </Navbar>
     );
 }
+

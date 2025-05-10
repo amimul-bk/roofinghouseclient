@@ -2,7 +2,7 @@ import { useState } from "react";
 import ContactForm from "./ContactForm";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import { FaPhoneVolume } from "react-icons/fa6";
+// import { FaPhoneVolume } from "react-icons/fa6";
 
 function ContactModal() {
     const [showModal, setShowModal] = useState(false);
@@ -13,16 +13,11 @@ function ContactModal() {
     return (
         <>
             <div className="d-flex align-items-center gap-2  ">
-                <div>
-                    <FaPhoneVolume className="phone-icon" />
-                    <a href="tel:+16143249797" className="phone-number">
-                        (614) 324-9797
-                    </a>
-                </div>
+                
 
                 <Button
                     variant="primary"
-                    className="mega-cta-nav"
+                    className="mega-cta-nav custom-btn"
                     onClick={handleShow}
                 >
                     Instant Roof Quote

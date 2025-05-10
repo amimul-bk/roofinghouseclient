@@ -82,7 +82,8 @@
     top: 100%;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    margin-top: var(--bs-dropdown-spacer);
+    /* margin-top: var(--bs-dropdown-spacer); */
+    margin-top: 15px !important;
 }
 
 .mega-menu {
@@ -90,6 +91,7 @@
     border: none;
     background: transparent;
     position: relative !important;
+    
 }
 
 .dropdown-menu.mega-menu {
@@ -105,13 +107,15 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     padding: 1.25rem 1.5rem 0 1.5rem;
     overflow: visible;
-    min-width: 240px;
-    width: max-content;
+    /* min-width: 240px; */
+    /* width: max-content; */
     z-index: 9999;
+
 }
 
 /* Triangle Arrow Fixed */
 .dropdown-arrow {
+    visibility: visible;
     position: absolute;
     top: -11px;
     left: 50%;
@@ -197,8 +201,21 @@
     background-color: var(--irs-red-dark);
     transform: scale(1.02);
 }
+/* button  */
+.custom-btn {
+  background-color: #b22335 !important;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(7, 7, 7, 0.3);
+  transition: all 0.3s ease-in-out;
+  }
 
-@media (max-width: 991px) {
+.custom-btn:hover {
+  background-color: #3D3B6D !important;
+  box-shadow: 0 8px 20px #3D3B6D !important;
+  transform: scale(1.05);
+ }
+
+@media (max-width: 1024px) {
     .scrollMobileNav {
         height: 100vh;
         width: auto;
@@ -217,6 +234,29 @@
     .mega-footer {
         padding: 0.75rem 1rem;
     }
+    .dropdown-menu[data-bs-popper] {
+    width: 100% !important;
+    top: 100%;
+    left: 0% !important;
+    transform:none !important;
+    margin: 5px !important;
+    
+    
+}
+.dropdown-arrow{
+    visibility: hidden;
+}
+.dropdown-menu.mega-menu {
+   left: 0% !important; /* anchor its left‐edge at 50% of the parent */
+    /* min-width: 100% !important; */
+    /* width: max-content; */
+   
+}
+
+.mega-menu{
+width: 100% !important;
+}
+
 }
 
 /* ── Instant Quote Form ───────────────── */
@@ -262,3 +302,9 @@
     transform: scale(1.02);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+.navbar-expand-xl .navbar-nav .dropdown-menu {
+        padding: 15px 0 0 0 !important;
+    }
+
+    
