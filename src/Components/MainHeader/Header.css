@@ -1,205 +1,209 @@
 :root {
-    --irs-red: #c1272d;
-    --irs-red-dark: #9e1a26;
-    --irs-gray: #333333;
-    --irs-shadow: rgba(0, 0, 0, 0.1);
-    --nav-font: "Poppins", sans-serif;
-    --nav-size: 0.9rem;
-    --arrow-size: 24px;
-    --arrow-bar: 2px;
+  --irs-red: #c1272d;
+  --irs-red-dark: #9e1a26;
+  --irs-gray: #333333;
+  --irs-shadow: rgba(0, 0, 0, 0.1);
+  --nav-font: "Poppins", sans-serif;
+  --nav-size: 0.9rem;
+  --arrow-size: 24px;
+  --arrow-bar: 2px;
 }
 
 /* ── Navbar Base ─────────────────────── */
 
 .irs-navbar {
-    background: #ffffff;
-    box-shadow: 0 2px 8px var(--irs-shadow);
-    font-family: var(--nav-font);
-    z-index: 1100;
+  background: #ffffff;
+  box-shadow: 0 2px 8px var(--irs-shadow);
+  font-family: var(--nav-font);
+  z-index: 1100;
 }
 
 .logoImg {
-    width: 140px;
-    transition: width 0.2s;
+  width: 140px;
+  transition: width 0.2s;
 }
 @media (max-width: 991px) {
-    .logoImg {
-        width: 120px;
-    }
+  .logoImg {
+    width: 120px;
+  }
 }
 
 .irs-nav .nav-link {
-    color: var(--irs-gray);
-    font-size: var(--nav-size);
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0.625rem 1rem;
-    transition: color 0.2s;
+  color: var(--irs-gray);
+  font-size: var(--nav-size);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.625rem 1rem;
+  transition: color 0.2s;
 }
 .irs-nav .nav-link:hover {
-    color: var(--irs-red) !important;
+  color: var(--irs-red) !important;
 }
 
 .cta-btn {
-    background-color: var(--irs-red);
-    color: #fff !important;
-    font-size: var(--nav-size);
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all linear 0.3s;
-    text-transform: none;
-    cursor: pointer;
+  background-color: var(--irs-red);
+  color: #fff !important;
+  font-size: var(--nav-size);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all linear 0.3s;
+  text-transform: none;
+  cursor: pointer;
 }
 .cta-btn:hover {
-    background-color: var(--irs-red-dark) !important;
-    transform: scale(1.1);
+  background-color: var(--irs-red-dark) !important;
+  transform: scale(1.1);
 }
 
 .call-portal {
-    margin-left: auto;
-    flex-shrink: 0;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 .phone-icon {
-    font-size: 15px;
-    color: #b22335;
+  font-size: 15px;
+  color: #b22335;
 }
 .phone-number {
-    color: black !important;
-    font-size: var(--nav-size);
-    text-decoration: none;
-    transition: color 0.2s;
+  color: black !important;
+  font-size: var(--nav-size);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 /* ── Mega Menu ───────────────────────── */
 
 .irs-nav .nav-item.dropdown {
-    position: relative;
-    width: 115px;
-    text-align: center;
+  position: relative;
+ 
+  text-align: center;
 }
 .dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    /* margin-top: var(--bs-dropdown-spacer); */
-    margin-top: 15px !important;
+  top: 100%;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  /* margin-top: var(--bs-dropdown-spacer); */
+  margin-top: 15px !important;
 }
 
 .mega-menu {
-    padding: 0;
-    border: none;
-    background: transparent;
-    position: relative !important;
-    
+  padding: 0;
+  border: none;
+  background: transparent;
+  position: relative !important;
 }
 
 .dropdown-menu.mega-menu {
-    position: absolute; /* already is, but be explicit */
-    top: calc(100% + 8px); /* same vertical gap */
-    left: 50% !important; /* anchor its left‐edge at 50% of the parent */
-    right: auto !important; /* cancel any Bootstrap “right” you had */
-    transform: translateX(-50%); /* shift back by half its own width */
+  position: absolute; /* already is, but be explicit */
+  top: calc(100% + 8px); /* same vertical gap */
+  left: 50% !important; /* anchor its left‐edge at 50% of the parent */
+  right: auto !important; /* cancel any Bootstrap “right” you had */
+  transform: translateX(-50%); /* shift back by half its own width */
 
-    /* keep your existing styling */
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    padding: 1.25rem 1.5rem 0 1.5rem;
-    overflow: visible;
-    /* min-width: 240px; */
-    /* width: max-content; */
-    z-index: 9999;
-
+  /* keep your existing styling */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 1.5rem 0 1.5rem;
+  overflow: visible;
+  /* min-width: 240px; */
+  /* width: max-content; */
 }
 
 /* Triangle Arrow Fixed */
 .dropdown-arrow {
-    visibility: visible;
-    position: absolute;
-    top: -11px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #ffffff;
-    z-index: 1000;
+  visibility: visible;
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+  z-index: 1000;
 
-    filter:
+  filter:
     /* left edge */ drop-shadow(-2px -2px 2px rgba(0, 0, 0, 0.08))
-        /* right edge */ drop-shadow(2px -2px 2px rgba(0, 0, 0, 0.08))
-        /* top edge */ drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.08));
+    /* right edge */ drop-shadow(2px -2px 2px rgba(0, 0, 0, 0.08))
+    /* top edge */ drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.08));
 }
 
 .mega-dropdown-item-icon {
-    margin-right: 7px;
-    color: var(--irs-red);
-    font-size: 18px;
-    font-weight: 500;
+  margin-right: 7px;
+  color: var(--irs-red);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .mega-content {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
+
 .mega-col {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 .cols-1 .mega-col,
 .cols-2 .mega-col,
 .cols-3 .mega-col,
 .cols-4 .mega-col {
-    flex: 1 1 0;
+  flex: 1 1 0;
 }
 
 .mega-item {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    color: var(--irs-gray);
-    font-size: 0.95rem;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: var(--irs-gray);
+  font-size: 0.95rem;
+  font-weight: 500;
+  /* white-space: nowrap; */
+  transition: color 0.2s;
+
+  white-space: normal; /* allow text to wrap */
+  word-break: break-word; /* break long words if needed */
+  overflow-wrap: break-word;
+  max-width: 400px; /* or any width you prefer */
 }
+
 .mega-item:hover {
-    color: var(--irs-red);
+  color: var(--irs-red);
 }
 
 .mega-footer {
-    margin-top: 1.5rem;
-    padding: 0 1.5rem 1rem;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem 1rem;
 }
 .mega-cta {
-    display: block;
-    background-color: var(--irs-red) !important;
-    color: #fff !important;
-    text-align: center;
-    padding: 0.75rem 0;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background 0.2s, transform 0.2s;
+  display: block;
+  background-color: var(--irs-red) !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 0.75rem 0;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
 }
 .mega-cta-nav {
-    display: block;
-    background-color: var(--irs-red) !important;
-    color: #fff !important;
-    text-align: center;
-    padding: 0.75rem 0;
-    border: none !important;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 10px;
-    transition: background 0.2s, transform 0.2s;
+  display: block;
+  background-color: var(--irs-red) !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 0.75rem 0;
+  border: none !important;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background 0.2s, transform 0.2s;
 }
 .mega-cta:hover {
-    background-color: var(--irs-red-dark);
-    transform: scale(1.02);
+  background-color: var(--irs-red-dark);
+  transform: scale(1.02);
 }
 /* button  */
 .custom-btn {
@@ -207,104 +211,115 @@
   border-radius: 50px;
   box-shadow: 0 6px 15px rgba(7, 7, 7, 0.3);
   transition: all 0.3s ease-in-out;
-  }
+}
 
 .custom-btn:hover {
-  background-color: #3D3B6D !important;
-  box-shadow: 0 8px 20px #3D3B6D !important;
+  background-color: #3d3b6d !important;
+  box-shadow: 0 8px 20px #3d3b6d !important;
   transform: scale(1.05);
- }
-
-@media (max-width: 1024px) {
-    .scrollMobileNav {
-        height: 100vh;
-        width: auto;
-        overflow: hidden auto;
-    }
-    .mega-menu .dropdown-menu {
-        width: 100% !important;
-        left: 0;
-        transform: none;
-        padding: 0.75rem 1rem;
-    }
-    .mega-content {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-    .mega-footer {
-        padding: 0.75rem 1rem;
-    }
-    .dropdown-menu[data-bs-popper] {
-    width: 100% !important;
-    top: 100%;
-    left: 0% !important;
-    transform:none !important;
-    margin: 5px !important;
-    
-    
 }
-.dropdown-arrow{
-    visibility: hidden;
+.navbar-expand-xl .navbar-nav .dropdown-menu{
+   box-shadow: 0 6px 15px rgba(11, 11, 11, 0.3);
 }
-.dropdown-menu.mega-menu {
-   left: 0% !important; /* anchor its left‐edge at 50% of the parent */
-    /* min-width: 100% !important; */
-    /* width: max-content; */
-   
-}
-
-.mega-menu{
-width: 100% !important;
-}
-
-}
-
 /* ── Instant Quote Form ───────────────── */
 
 .contact-modal-body {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 .quote-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 .quote-form .form-label {
-    font-weight: 500;
+  font-weight: 500;
 }
 .quote-form .text-danger {
-    margin-left: 2px;
+  margin-left: 2px;
 }
 .quote-form .form-control {
-    border-radius: 4px;
-    padding: 0.75rem;
+  border-radius: 4px;
+  padding: 0.75rem;
 }
 .quote-form .form-control:focus {
-    box-shadow: 0 0 0 2px rgba(49, 132, 253, 0.25);
+  box-shadow: 0 0 0 2px rgba(49, 132, 253, 0.25);
 }
 .quote-form .invalid-feedback {
-    display: block;
+  display: block;
 }
 .submit-btn {
-    background: var(--irs-red) !important;
-    width: 100%;
-    padding: 10px 0 !important;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 30px;
-    border: none !important;
-    transition: transform 0.2s, box-shadow 0.2s;
+  background: var(--irs-red) !important;
+  width: 100%;
+  padding: 10px 0 !important;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none !important;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .submit-btn:hover:not(:disabled) {
-    transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-expand-xl .navbar-nav .dropdown-menu {
-        padding: 15px 0 0 0 !important;
-    }
+  padding: 15px 0 0 0 !important;
+}
+.dropdown-toggle::after{
+color: #fb0425;
+}
+@media (max-width: 1024px) {
+  .scrollMobileNav {
+    height: 100vh;
+    width: auto;
+    overflow: hidden auto;
+  }
+  .mega-menu .dropdown-menu {
+    width: 100% !important;
+    left: 0;
+    transform: none;
+    padding: 0.75rem 1rem;
+  }
+  .mega-content {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .mega-footer {
+    padding: 0.75rem 1rem;
+  }
+  .dropdown-menu[data-bs-popper] {
+    width: 100% !important;
+    top: 100%;
+    left: 0% !important;
+    transform: none !important;
+    margin: 5px !important;
+  }
+  .dropdown-arrow {
+    visibility: hidden;
+  }
+  .dropdown-menu.mega-menu {
+    left: 0% !important; /* anchor its left‐edge at 50% of the parent */
+    /* min-width: 100% !important; */
+    /* width: max-content; */
+  }
 
-    
+  .mega-menu {
+    width: 100% !important;
+  }
+
+  .dropdown-menu {
+    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+  .irs-nav .nav-item.dropdown {
+    width: auto !important;
+  }
+
+  .center-btn {
+    display: flex;
+    justify-content: center;
+  }
+}

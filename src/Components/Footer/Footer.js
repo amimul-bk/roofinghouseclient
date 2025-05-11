@@ -48,12 +48,12 @@ const Footer = () => {
               <div className="d-flex flex-column ">
                 <p className="my-0 fw-bold">Contact Info</p>
                 <div className="d-flex gap-1 align-items-center custom-hover"> 
-                <MdEmail />
+                <IoMdPhonePortrait />
                 <a href="tel:+16143577539" className="text-decoration-none  d-flex align-items-center">+1 (614) 357-7539
                 </a> </div>
 
                 <div className="d-flex gap-1 align-items-center custom-hover">
-                <IoMdPhonePortrait />
+                  <MdEmail />
                   <a href="mailto:roofs@ultimatesroofing.com" className="text-decoration-none  d-flex align-items-center">
                 roofs@ultimatesroofing.com</a></div>
                 
@@ -134,7 +134,7 @@ const Footer = () => {
                 <div className="line bg-white"></div>
               </div>
               <ul className="list-unstyled mt-3">
-                {["Contact Innovative",  "Client Portal Login", "Service Area", "Partners & Listings", "Privacy Policy"].map((item, i) => (
+                {["Contact",  "Client Portal Login", "Service Area", "Partners & Listings", "Privacy Policy"].map((item, i) => (
                   <li key={i} className="mb-2 d-flex gap-1">
                     <BsCaretRightFill style={{ color: "#ff3b3b" }} />
                     <a href="#" className="text-white text-decoration-none small link-hover">{item}</a>
