@@ -269,7 +269,7 @@
   padding: 15px 0 0 0 !important;
 }
 .dropdown-toggle::after{
-color: #fb0425;
+color: #b22335;
 }
 @media (max-width: 1024px) {
   .scrollMobileNav {

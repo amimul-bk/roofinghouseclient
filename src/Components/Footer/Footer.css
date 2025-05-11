@@ -27,13 +27,10 @@
   
   .secondColor {
     background-color: #131010;
-   display: grid;
-   grid-template-columns: repeat(5,1fr);
+   
    
   }
-  .colOne{
-    grid-column: span 2;
-  }
+
   
   .custom-hover,
   .custom-hover p,
@@ -47,13 +44,8 @@
     color: #b22335 !important;
   }
   @media (max-width: 1200.98px){
-    .colOne{
-      grid-column: span 1;
-    }
-    .secondColor {
-     
-     grid-template-columns: repeat(4,1fr);
-    }
+   
+  
   }
   /* Responsive text align fallback */
   @media (max-width: 767.98px) {
@@ -66,22 +58,13 @@
     .firstfootertext{
         max-width: 300px;
     }
-    .secondColor {
-      gap: 5px;
-      grid-template-columns: repeat(2, 1fr); /*  ২ */
-    }
+   
   }
   @media (max-width: 768px) { /* ট্যাব ডিভাইস */
-    .secondColor {
-      
-      gap: 5px;
-        grid-template-columns: repeat(2, 1fr); /* ট্যাবে ২ কলাম */
-    }
+
 }
 
 @media (max-width: 480px) { /* মোবাইল ডিভাইস */
-    .secondColor {
-        grid-template-columns: 1fr; /* মোবাইলে ১ কলাম */
-    }
+  
 }
  

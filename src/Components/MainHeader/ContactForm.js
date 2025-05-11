@@ -70,7 +70,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
             onSubmit={handleSubmit}
         >
             {({ isSubmitting, status }) => (
-                <Form className="quote-form-formik">
+                <Form className="quote-form-formik main">
                     {status?.error && (
                         <Alert variant="danger" className="mb-3">
                             {status.error}
