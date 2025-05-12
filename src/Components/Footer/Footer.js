@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="container mx-auto">
 
           {/* Top Section */}
-          <Row className="pb-3 text-white justify-content-center mx-auto gap-lg-0 ">
+          <Row className="pb-3 text-white justify-content-center  gap-lg-0 container mx-auto">
 
             {/* Bangladesh Address */}
             <Col sm={12} md={6} lg={5} className="mb-lg-1 mb-3 d-flex gap-3 align-items-center justify-content-md-center justify-content-start mx-auto">
@@ -60,7 +60,7 @@ const Footer = () => {
 
           
          {/* Bottom Section */}
-<Row className="pt-4 pb-2 container mx-auto">
+<Row className="pt-4 pb-2 container mx-auto secondColor">
   {/* Company Info */}
   <Col xs={12} sm={6} md={6} lg={6} xl={4} className="mb-4">
     <div className="w-50 mb-1">
@@ -70,11 +70,12 @@ const Footer = () => {
       Welcome to Ultimates Roofing LLC, your creative marketing partner. We turn vision into measurable success with innovative strategies and data-driven solutions.
     </p>
     <ul className="list-unstyled d-flex gap-2 mt-4">
-      <li><Link to="/" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><FaFacebook /></Link></li>
-      <li><Link to="/" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><BsTwitterX /></Link></li>
-      <li><Link to="/" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><AiFillLinkedin /></Link></li>
-      <li><Link to="/" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><FaInstagramSquare /></Link></li>
-    </ul>
+      <li><Link to="https://www.facebook.com/UltimateSRoofing/" target="_blank" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><FaFacebook /></Link></li>
+      <li><Link to="https://x.com/Ultimates247" target="_blank" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><BsTwitterX /></Link></li>
+      <li><Link to="https://www.linkedin.com/company/ultimatesroofing/" target="_blank" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><AiFillLinkedin /></Link></li>
+      <li><Link to="https://www.instagram.com/ultimatesroofing/" target="_blank" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><FaInstagramSquare /></Link></li>
+    </ul> 
+ 
   </Col>
 
   {/* Residential Roofing */}

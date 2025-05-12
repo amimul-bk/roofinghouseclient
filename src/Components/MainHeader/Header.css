@@ -1,6 +1,15 @@
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../public/Hauora-Medium.ttf);
+}
+@font-face {
+    font-family: hauora-light;
+    src: url(../../../public/Hauora-Light.ttf);
+}
+
 :root {
   --irs-red: #c1272d;
-  --irs-red-dark: #9e1a26;
+  --irs-red-dark: #B22335;
   --irs-gray: #333333;
   --irs-shadow: rgba(0, 0, 0, 0.1);
   --nav-font: "Poppins", sans-serif;
@@ -8,7 +17,9 @@
   --arrow-size: 24px;
   --arrow-bar: 2px;
 }
-
+.color{
+  color: #b22335;
+}
 /* ── Navbar Base ─────────────────────── */
 
 .irs-navbar {
@@ -271,7 +282,40 @@
 .dropdown-toggle::after{
 color: #b22335;
 }
+/* এই ক্লাসগুলোতে ফন্ট অ্যাপ্লাই করতে হবে */
+.mega-item,
+.dropdown-item,
+.mega-cta-nav {
+    font-family: hauora-medium;
+}
+.mega-item,
+.mega-cta-nav,
+.nav-link[href="/contact"] {
+    font-family: hauora-medium !important;
+}
+/* Header.css এ নিচের কোড যোগ করুন */
+
+/* ডেস্কটপের জন্য */
+.irs-nav .nav-item.dropdown.show .nav-link {
+  color: var(--irs-red) !important;
+}
+/* Target all form labels */
+.quote-form-formik .form-group label {
+    font-family: hauora-medium !important;
+   
+    /* Add other label styles if needed */
+}
+.fontHauora{
+ font-family: hauora-medium !important;
+}
+.fontLight{
+   font-family: hauora-light !important;
+}
 @media (max-width: 1024px) {
+   .mega-item,
+    .nav-link[href="/contact"] {
+        font-family: hauora-medium !important;
+    }
   .scrollMobileNav {
     height: 100vh;
     width: auto;
@@ -321,5 +365,8 @@ color: #b22335;
   .center-btn {
     display: flex;
     justify-content: center;
+  }
+   .irs-nav .nav-item.dropdown.show .nav-link {
+    color: var(--irs-red) !important;
   }
 }

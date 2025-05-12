@@ -67,10 +67,10 @@ export default function ContactForm({ source = "modal", handleClose }) {
                 message: "",
             }}
             validationSchema={contactFormValidationSchema}
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit} className="fontLight"
         >
             {({ isSubmitting, status }) => (
-                <Form className="quote-form-formik main">
+                <Form className="quote-form-formik main ">
                     {status?.error && (
                         <Alert variant="danger" className="mb-3">
                             {status.error}
@@ -80,13 +80,14 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     <Row className="mb-3">
                         <Col md={6}>
                             <BootstrapForm.Group controlId="firstName">
-                                <BootstrapForm.Label>
+                                <BootstrapForm.Label className="fontHauora">
                                     First Name <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
                                     name="firstName"
                                     as={BootstrapForm.Control}
                                     placeholder="Type Your First Name"
+                                    className="fontLight"
                                 />
                                 <ErrorMessage
                                     name="firstName"
@@ -97,13 +98,14 @@ export default function ContactForm({ source = "modal", handleClose }) {
                         </Col>
                         <Col md={6}>
                             <BootstrapForm.Group controlId="lastName">
-                                <BootstrapForm.Label>
+                                <BootstrapForm.Label className="fontHauora">
                                     Last Name <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
                                     name="lastName"
                                     as={BootstrapForm.Control}
                                     placeholder="Type Your Last Name"
+                                     className="fontLight"
                                 />
                                 <ErrorMessage
                                     name="lastName"
@@ -117,13 +119,14 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     <Row className="mb-3">
                         <Col md={6}>
                             <BootstrapForm.Group controlId="phoneNumber">
-                                <BootstrapForm.Label>
+                                <BootstrapForm.Label className="fontHauora">
                                     Phone Number <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
                                     name="phoneNumber"
                                     as={BootstrapForm.Control}
                                     placeholder="e.g. +1 5551234567"
+                                     className="fontLight"
                                 />
                                 <ErrorMessage
                                     name="phoneNumber"
@@ -134,13 +137,14 @@ export default function ContactForm({ source = "modal", handleClose }) {
                         </Col>
                         <Col md={6}>
                             <BootstrapForm.Group controlId="address">
-                                <BootstrapForm.Label>
+                                <BootstrapForm.Label className="fontHauora">
                                     Address <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
                                     name="address"
                                     as={BootstrapForm.Control}
                                     placeholder="Type Your address"
+                                     className="fontLight"
                                 />
                                 <ErrorMessage
                                     name="address"
@@ -154,14 +158,14 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     <Row className="mb-3">
                         <Col>
                             <BootstrapForm.Group controlId="message">
-                                <BootstrapForm.Label>
+                                <BootstrapForm.Label className="fontHauora">
                                     Message (Optional)
                                 </BootstrapForm.Label>
                                 <Field
                                     name="message"
                                     as="textarea"
-                                    className="form-control"
-                                    rows={4}
+                                    className="form-control fontLight"
+                                    rows={3}
                                     placeholder="Type Your message..."
                                 />
                                 <ErrorMessage
@@ -176,7 +180,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     <div className="text-center mt-4">
                         <Button
                             type="submit"
-                            className="submit-btn-custom custom-btn"
+                            className="submit-btn-custom custom-btn fontHauora"
                             disabled={isSubmitting}
                         >
                             {isSubmitting ? (

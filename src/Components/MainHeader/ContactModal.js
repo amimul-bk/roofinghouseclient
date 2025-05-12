@@ -4,6 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import './Header.css'
 
 function ContactModal() {
     const [showModal, setShowModal] = useState(false);
@@ -28,25 +29,25 @@ function ContactModal() {
 
             <Modal show={showModal} onHide={handleClose} centered>
                 <Modal.Header closeButton>
-                    <Modal.Title>Instant Roof Quote</Modal.Title>
+                    <Modal.Title className="fontHauora">Instant Roof Quote</Modal.Title>
 
                 </Modal.Header>
 
-                <div className="mx-auto justify-content-center my-3">
-                    <div className="mx-2 px-md-1 px-2">
-                        Please call and email us with your Details 
+                <div className="mx-auto justify-content-center my-2">
+                    <div className="mx-2 px-md-1 px-2 text-center">
+                        <p className="text-center fontHauora"> Please call and email us with your Details</p>
                         <div className="">
-                            <p className="my-0 py-0">
+                            <p className="my-0 py-0 fontLight">
                                  <FaPhoneVolume className="phone-icon ms-1 me-1" />
-                            <a href="tel:+1614-357-7539" className="phone-number">
+                            <a href="tel:+1614-357-7539" className="phone-number fontLight">
                                 614-357-7539
                             </a>
                             </p>
-                          <p className="d-flex align-items-center gap-1">  
-                                <MdEmail  />
+                          <p className="d-flex align-items-center gap-1 text-center justify-content-center fontLight">  
+                                <MdEmail className="color" />
                             <a
                                 href="mailto:roofs@ultimatesroofing.com"
-                                className="text-decoration-none d-flex align-items-center"
+                                className="text-decoration-none d-flex align-items-center fontLight"
                             >
                                 roofs@ultimatesroofing.com
                             </a> </p> 
@@ -57,9 +58,9 @@ function ContactModal() {
 
                        
                     </div>
-                    <p className="px-2 d-flex justify-content-center mx-auto"> OR </p>
-                    <p className="mx-2">
-                        Leave a message for Further Assistances on Accurate Quotes.
+                    <p className="px-2 d-flex justify-content-center mx-auto text-center fontLight"> OR </p>
+                    <p className="mx-2 text-center fontLight">
+                       Leave your Information below
                     </p>
                 </div>
 

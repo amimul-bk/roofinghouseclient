@@ -1,3 +1,39 @@
+/* Fonts */
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../public/Hauora-Medium.ttf);
+}
+
+@font-face {
+    font-family: hauora-light;
+    src: url(../../../public/Hauora-Light.ttf);
+}
+
+/* Fonts যোগ করুন */
+
+
+
+/* মেইন ফুটার কন্টেইনার */
+.bg-black {
+    font-family: hauora-medium; /* মূল ফন্ট */
+}
+
+/* হেডিংস (যেমন: Head Office, RESIDENTIAL ROOFING) */
+.bg-black h4,
+.bg-black .fw-bold {
+    font-family: hauora-medium !important; /* মিডিয়াম ফন্ট */
+}
+
+/* সাব-সেকশন ডিটেইলস (ঠিকানা, কন্টাক্ট, টাইমিং) */
+.bg-black .custom-hover,
+.bg-black .custom-hover a,
+.bg-black .firstfootertext,
+.bg-black .small,
+.bg-black .link-hover,
+.bg-black .social-icon {
+    font-family: hauora-light !important; /* লাইট ফন্ট */
+}
+
 .text-justified {
     text-align: justify;
   }
@@ -27,9 +63,8 @@
   
   .secondColor {
     background-color: #131010;
-   
-   
-  }
+   box-shadow: #b22335 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+     }
 
   
   .custom-hover,
