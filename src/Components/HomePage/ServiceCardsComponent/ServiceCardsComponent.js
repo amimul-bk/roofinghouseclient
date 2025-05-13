@@ -31,7 +31,8 @@ function ServiceCardsComponent() {
                         <div className='section'>
                             <div>
                                 <h1 className='service-heading'>Our Services</h1>
-                                <p className='service-text'>From Home and Commercial Roofing to Siding, Gutters, and Windows, our services redefine precision and style. Elevate your property with our commitment to unparalleled craftsmanship.</p>
+                                <p className='service-text'>From Home and Commercial Roofing to Siding, Gutters, and Windows, our services redefine precision and style.
+                                 Elevate your property with our commitment to unparalleled craftsmanship.</p>
                             </div>
                         </div>
                     </Col>

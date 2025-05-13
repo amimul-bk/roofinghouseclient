@@ -15,6 +15,8 @@ import LogosComponent from "./LogosComponent/LogosComponent";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import InstantRoofQuote from "../MainHeader/InstantRoofQuote";
+import { IoMdPhonePortrait } from "react-icons/io";
+import Video from "./Vedio/Video";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -71,69 +73,7 @@ function HomePage() {
         <html lang="en" />
       </Helmet>
 
-      {/**  background video */}
-      <div className="background-video-container">
-        <video autoPlay muted playsInline loop className="background-video">
-          <source src={videoSource} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="content-overlay">
-          <h1 className="main-heading">
-            Elevate Every Horizon, Transforming Views with Our Roofing Expertise
-          </h1>
-          <p className="main-text">
-            A symphony of strength resonating through every project
-          </p>
-          <div className="toast-div">
-            <Button
-              className="estimate-btn"
-              onClick={() => {
-                navigate("/contact");
-              }}
-            >
-              Get Your Free Estimate
-            </Button>
-            {toast1 && toast && (
-              <Toast
-                style={{
-                  borderRadius: "0px",
-                  position: "fixed",
-                  right: "0",
-                  zIndex: "1000 !important",
-                }}
-                onClose={handleToastClose}
-              >
-                <Toast.Header style={{ fontSize: "14px" }}>
-                  <strong className="me-auto">Need consultant's advise?</strong>
-                </Toast.Header>
-                <Toast.Body
-                  style={{
-                    color: "#000",
-                    fontSize: "13px",
-                    display: "flex",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <div
-                    style={{ cursor: "pointer" }}
-                    onClick={() => setShowModal(true)}
-                  >
-                    Request for a call back
-                  </div>
-                  <div
-                    style={{ cursor: "pointer" }}
-                    onClick={() => setShowModal1(true)}
-                  >
-                    {" "}
-                    Leave a message for us
-                  </div>
-                </Toast.Body>
-              </Toast>
-            )}
-          </div>
-        </div>
-      </div>
-
+    <Video></Video>
       {/**  our services */}
       <ServiceCardsComponent />
 

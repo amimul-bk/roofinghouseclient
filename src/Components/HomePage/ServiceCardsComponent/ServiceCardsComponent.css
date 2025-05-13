@@ -26,8 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    width: 28rem;
+   
+    width: 40rem;
     margin: 0 auto;
     padding-right: 5px;
 }
@@ -36,11 +36,13 @@
     margin: 0rem 0rem 1rem 0rem;
     font-size: 2rem;
     font-family: hauora-medium;
+    text-align: center;
 }
 
 .service-text {
     font-size: 1.2rem;
     letter-spacing: 1px;
+     text-align: center;
 }
 
 .hover-effect {

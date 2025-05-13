@@ -1,0 +1,301 @@
+@font-face {
+    font-family: hauora-medium;
+    src: url(../../../../public/Hauora-Medium.ttf);
+}
+
+/* Background Video Container */
+.color {
+    color: #b22335;
+}
+
+.font {
+    font-family: hauora-medium !important;
+}
+
+.background-video-container {
+    position: relative;
+    height: 120vh;
+    /* Increased height */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 24%;
+    font-family: hauora-medium !important;
+}
+
+/* Background Video */
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+}
+
+/* Text Content Overlay */
+.content-overlay {
+    color: #fff;
+    z-index: 3;
+    width: 80%;
+    margin: 8% auto 0 auto;
+    font-family: hauora-medium !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+.main-heading {
+    font-size: 38px;
+    font-weight: bolder !important;
+
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: hauora-medium !important;
+}
+
+.content-overlay .subhead {
+    color: #b22335;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    font-family: hauora-medium !important;
+}
+
+.main-text {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding: 1vh 0px;
+    text-align: center;
+    width: 100%;
+    font-family: hauora-medium !important;
+}
+
+/* Buttons */
+.btn-div {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 5%;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.estimate-btn {
+    border-radius: 50px;
+    background-color: #B22335 !important;
+    border: 1px solid #B22335 !important;
+    width: 230px !important;
+    font-family: hauora-medium !important;
+}
+
+.estimate-btn:hover {
+    background-color: #3D3B6D !important;
+    border-color: #3D3B6D !important;
+    box-shadow: 0 8px 20px #3d3b6d !important;
+}
+
+.phonebtn {
+    background-color: #b22335 !important;
+    border: solid 1px #b22335 !important;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(7, 7, 7, 0.3);
+    transition: all 0.3s ease-in-out;
+    color: white !important;
+    width: 230px !important;
+    display: flex;
+    justify-content: center;
+    font-family: hauora-medium !important;
+}
+
+.phonebtn:hover {
+    background-color: #3d3b6d !important;
+    box-shadow: 0 8px 20px #3d3b6d !important;
+    border-color: #3D3B6D !important;
+    transform: scale(1.05);
+}
+
+
+/* Floating Services Boxes */
+.floating-services-boxes {
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    z-index: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+/* Individual Service Box */
+.service-box {
+    background-color: #b22335;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    font-family: hauora-medium;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    font-family: hauora-medium !important;
+   
+    box-shadow: #b22335 0px 25px 50px -12px;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.justify {
+    text-align: justify;
+    font-family: hauora-medium !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 1050px) {
+    .background-video-container {
+        margin-bottom: 28%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-video-container {
+        margin-bottom: 40%;
+        height: 155vh;
+    }
+
+    .content-overlay {
+        width: 90%;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .floating-services-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .subhead {
+        font-size: 20px;
+    }
+
+    .main-text {
+        font-size: 1rem;
+    }
+
+    .btn-div {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 10px !important;
+    }
+}
+@media screen and (max-width: 500px) {
+     .background-video-container {
+        margin-bottom: 90%;
+        height: 180vh;
+    }
+     .floating-services-boxes {
+        top: 110vh;
+    }
+    .justify {
+    text-align: start !important;
+    font-family: hauora-medium !important;
+}
+.main-heading {
+        font-size: 22px;
+    }
+
+    .subhead {
+        font-size: 15px;
+    }
+
+    .main-text {
+        font-size: 15px;
+    }
+    .service-box .ser-head {
+        font-size: 17px !important;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .background-video-container {
+        margin-bottom: 140%;
+       
+    }
+
+    .content-overlay {
+        width: 90%;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .floating-services-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    .main-heading {
+        font-size: 22px;
+    }
+
+    .subhead {
+        font-size: 15px;
+    }
+
+    .main-text {
+        font-size: 15px;
+    }
+
+    .btn-div {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .floating-services-boxes {
+
+        top: 123vh;
+
+    }
+
+    .service-box .ser-head {
+        font-size: 17px !important;
+    }
+}
+
+@media screen and (max-width: 365px) { 
+     .background-video-container {
+        margin-bottom: 160%;
+       
+    }
+    .floating-services-boxes {
+   
+    top: 126vh;
+   
+}
+}
