@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: flex-start;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 24%;
+    margin-bottom: 2%;
     font-family: hauora-medium !important;
 }
 
@@ -41,7 +41,7 @@
     color: #fff;
     z-index: 3;
     width: 80%;
-    margin: 8% auto 0 auto;
+    margin: 15% auto 0 auto;
     font-family: hauora-medium !important;
     display: flex;
     flex-direction: column;
@@ -50,9 +50,9 @@
 }
 
 .main-heading {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: bolder !important;
-
+    max-width: 700px;
     color: white;
     text-align: center;
     width: 100%;
@@ -68,7 +68,7 @@
 }
 
 .main-text {
-    font-size: 1.3rem;
+    font-size: 16px;
     letter-spacing: 1px;
     padding: 1vh 0px;
     text-align: center;
@@ -86,19 +86,6 @@
     margin-top: 1rem;
 }
 
-.estimate-btn {
-    border-radius: 50px;
-    background-color: #B22335 !important;
-    border: 1px solid #B22335 !important;
-    width: 230px !important;
-    font-family: hauora-medium !important;
-}
-
-.estimate-btn:hover {
-    background-color: #3D3B6D !important;
-    border-color: #3D3B6D !important;
-    box-shadow: 0 8px 20px #3d3b6d !important;
-}
 
 .phonebtn {
     background-color: #b22335 !important;
@@ -124,7 +111,7 @@
 /* Floating Services Boxes */
 .floating-services-boxes {
     position: absolute;
-    top: 100vh;
+    top: 90vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -146,11 +133,10 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     transition: all 0.3s ease-in-out;
     font-family: hauora-medium !important;
-   
-    box-shadow: #b22335 0px 25px 50px -12px;
+   box-shadow: #3d3b6d 0px 25px 50px -12px;
 }
 
 .service-box:hover {
@@ -159,22 +145,26 @@
 }
 
 .justify {
-    text-align: justify;
+    text-align: start;
     font-family: hauora-medium !important;
+    font-size: 16px;
 }
-
+.service-box .ser-head {
+        font-size: 17px !important;
+        font-weight: bolder !important;
+    }
 /* Responsive */
 @media screen and (max-width: 1050px) {
     .background-video-container {
-        margin-bottom: 28%;
+        margin-bottom: 10%;
 
     }
 }
 
 @media screen and (max-width: 768px) {
     .background-video-container {
-        margin-bottom: 40%;
-        height: 155vh;
+        margin-bottom: 25%;
+        height: 135vh;
     }
 
     .content-overlay {
@@ -192,18 +182,9 @@
         width: 90%;
     }
 
-    .main-heading {
-        font-size: 28px;
-    }
+   
 
-    .subhead {
-        font-size: 20px;
-    }
-
-    .main-text {
-        font-size: 1rem;
-    }
-
+  
     .btn-div {
         flex-direction: column !important;
         align-items: center;
@@ -211,37 +192,37 @@
     }
 }
 @media screen and (max-width: 500px) {
+     .main-heading {
+        font-size: 18px;
+    }
+
+    .content-overlay {
+   
+    margin: 25% auto 0 auto;
+    
+}
      .background-video-container {
-        margin-bottom: 90%;
-        height: 180vh;
+        margin-bottom: 120%;
+        height: 100vh;
     }
      .floating-services-boxes {
-        top: 110vh;
+        top: 70vh;
     }
     .justify {
     text-align: start !important;
     font-family: hauora-medium !important;
 }
-.main-heading {
-        font-size: 22px;
-    }
 
-    .subhead {
-        font-size: 15px;
-    }
-
-    .main-text {
-        font-size: 15px;
-    }
+   
     .service-box .ser-head {
-        font-size: 17px !important;
+        font-size: 15px !important;
     }
 
 }
 
 @media screen and (max-width: 380px) {
     .background-video-container {
-        margin-bottom: 140%;
+        margin-bottom: 157%;
        
     }
 
@@ -261,12 +242,10 @@
     }
 
     .main-heading {
-        font-size: 22px;
+        max-width: 300px;
     }
 
-    .subhead {
-        font-size: 15px;
-    }
+  
 
     .main-text {
         font-size: 15px;
@@ -279,23 +258,21 @@
 
     .floating-services-boxes {
 
-        top: 123vh;
+        top: 70vh;
 
     }
 
     .service-box .ser-head {
-        font-size: 17px !important;
+        font-size: 15px !important;
     }
 }
 
 @media screen and (max-width: 365px) { 
      .background-video-container {
-        margin-bottom: 160%;
-       
-    }
+        margin-bottom: 165%;
+       }
     .floating-services-boxes {
-   
-    top: 126vh;
-   
+    top: 70vh;
+   }
 }
-}
+

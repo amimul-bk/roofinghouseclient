@@ -125,7 +125,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
                                 <Field
                                     name="phoneNumber"
                                     as={BootstrapForm.Control}
-                                    placeholder="e.g. +1 5551234567"
+                                    placeholder="e.g. +1614-357-7539"
                                      className="fontLight"
                                 />
                                 <ErrorMessage

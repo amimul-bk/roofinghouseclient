@@ -3,12 +3,15 @@ import React, { useState } from "react";
 import { Button, Toast } from "react-bootstrap";
 import { IoMdPhonePortrait } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import videoSource from "../../../assets/HomePageImages/Ultimate Roofing Video_Dec28.mp4";
+import videoSource from "../../../assets/HomePageImages/Best_Roofing_Company_in_Across_OhioUltimatesRoofingLLC.mp4";
 import './Video.css'
 import { MdRoofing } from "react-icons/md";
 import { BsFillHouseHeartFill } from "react-icons/bs";
 import { GrVmMaintenance } from "react-icons/gr";
 import { MdEmergency } from "react-icons/md";
+import { TbTargetArrow } from "react-icons/tb";
+import { GiMicroscope } from "react-icons/gi";
+import ContactModal from "../ContactModal";
 
 const Video = () => {
     const navigate = useNavigate();
@@ -32,18 +35,10 @@ const Video = () => {
 
       {/* Overlay Content */}
       <div className="content-overlay font">
-        <h1 className="main-heading font">
-          Your Trusted Roofing Company in Columbus, Ohio for Quality Service to Meet Your Needs
+        <h1 className="main-heading font mx-auto ">
+          Your Trusted Roofing Company in Across Ohio for Quality Service to Meet Your Needs
         </h1>
-        <h2 className="subhead fw-bold font">
-          # Residential + Commercial Roofing Contractors Columbus Ohio
-        </h2>
-        <p className="main-text font">
-          Ultimates Roofing LLC specialises in top-quality residential and commercial roofing
-          installation, inspections, repairs and 24/7 emergency services across Columbus, Ohio.
-          Protecting local homes, offices, warehouses, businesses and multi-local families-owned
-          dwellings with expert care and durable roofing solutions.
-        </p>
+      
 <div className="d-flex justify-content-center text-white mx-auto">
   
     <p className="font fw-bolder ">  LICENSED | BONDED | INSURED</p>
@@ -60,10 +55,10 @@ const Video = () => {
               </a>
             </div>
           </Button>
-          <Button className="estimate-btn font" onClick={() => navigate("/contact")}>
-            Get Your Free Estimate
-          </Button>
-
+          
+  <div className="">
+             <ContactModal/>
+          </div>
          
 
           {toast && toast1 && (
@@ -104,26 +99,22 @@ const Video = () => {
     {/* Floating Services Boxes */}
       <div className="floating-services-boxes font">
         <div className="service-box font">
-          <h3 className="font ser-head"><MdRoofing className="me-1"/>“Free” Roof Inspections and Estimates</h3>
+          <h3 className="font ser-head"><GiMicroscope className="me-1"/>Vision</h3>
           <p className="justify">
-           Schedule a complimentary roof inspection and receive a detailed estimate from our experts.
-
+         Guided by our visionary spirit, we propel towards a future where the transformative prowess of roofing excellence not only enhances each property 
+         but becomes a catalyst for enduring satisfaction, imprinting a profound and lasting impact on the landscapes we touch.
           </p>
-          <h3  className="font ser-head">  <BsFillHouseHeartFill  className="me-1"/>Roof Installation + Replacement</h3>
-          <p className="justify">
-            Professional installation and replacement services using high-quality materials for lasting durability.
-          </p>
+          
         </div>
 
         <div className="service-box">
-          <h3  className="font ser-head"><GrVmMaintenance /> Roof Repair + Maintenance</h3>
+          <h3  className="font ser-head"> <TbTargetArrow className="me-1"  />Mission </h3>
           <p className="justify">
-           Prompt repair and regular maintenance to extend the lifespan of your roof and prevent costly damages.
+         Our mission is to empower clients by delivering top-tier roofing solutions, marked by a commitment to durability, 
+         continuous innovation, 
+         and unwavering dedication to customer-centric service, ensuring not just satisfaction, but lasting trust.
           </p>
-          <h3  className="font ser-head"><MdEmergency /> 24/7 Emergency Roofing Services</h3>
-          <p className="justify">
-          24/7 emergency roofing services to address unexpected issues promptly and efficiently.
-          </p>
+         
         </div>
       </div>
         </div>
