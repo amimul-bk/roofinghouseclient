@@ -13,6 +13,7 @@ import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 import SuccessPage from "./Components/ContactPage/SuccessPage";
 import ReviewsPage from "./Components/ReviewsPage/ReviewsPage";
 import Header from "./Components/MainHeader/Header";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (

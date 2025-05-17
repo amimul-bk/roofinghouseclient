@@ -1,29 +1,26 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "./Button";
 import "./Header.css";
-
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { IoIosArrowForward } from "react-icons/io";
 import logo from "../../assets/Icon/Logollc.png";
 import ContactModal from "./ContactModal";
-
-
 
 const menus = {
   Commercial: {
     cols: 1,
     items: [
       { label: "Commercial Roofing", href: "/commercial-roofing" },
-      { label: "Free Roof Inspections & Estimates", href: "/commercial-roofing" },
-      { label: "Roof Replacement", href: "/commercial-roofing" },
-      { label: "Roof Installation", href: "/commercial-roofing" },
-      { label: "Roof Repair & Maintenance", href: "/commercial-roofing" },
-      { label: "Emergency Roofing Services", href: "/commercial-roofing" },
-      { label: "Roof Tarping", href: "/commercial-roofing" },
-      { label: "TPO Roof", href: "/commercial-roofing" },
-      { label: "Metal Roof", href: "/commercial-roofing" },
-      { label: "Shingles Roof", href: "/commercial-roofing" },
-      { label: "Tile Roof", href: "/commercial-roofing" },
+      { label: "Free Roof Inspections & Estimates", href: "/contact" },
+      { label: "Roof Replacement", href: "/contact" },
+      { label: "Roof Installation", href: "/contact" },
+      { label: "Roof Repair & Maintenance", href: "/contact" },
+      { label: "Emergency Roofing Services", href: "/contact" },
+      { label: "Roof Tarping", href: "/contact" },
+      { label: "TPO Roof", href: "/contact" },
+      { label: "Metal Roof", href: "/contact" },
+      { label: "Shingles Roof", href: "/contact" },
+      { label: "Tile Roof", href: "/contact" },
     ],
     cta: { label: "Commercial Services", href: "/commercial-roofing" },
   },
@@ -31,15 +28,15 @@ const menus = {
     cols: 1,
     items: [
       { label: "Residential Roofing", href: "/residential-roofing" },
-      { label: "Free Roof Inspections & Estimates", href: "/residential-roofing" },
-      { label: "Roof Replacement", href: "/residential-roofing" },
-      { label: "Roof Installation", href: "/residential-roofing" },
-      { label: "Roof Repair & Maintenance", href: "/residential-roofing" },
-      { label: "Emergency Roofing Services", href: "/residential-roofing" },
-      { label: "Roof Tarping", href: "/residential-roofing" },
-      { label: "Metal Roof", href: "/residential-roofing" },
-      { label: "Shingles Roof", href: "/residential-roofing" },
-      { label: "Tile Roof", href: "/residential-roofing" },
+      { label: "Free Roof Inspections & Estimates", href: "/contact" },
+      { label: "Roof Replacement", href: "/contact" },
+      { label: "Roof Installation", href: "/contact" },
+      { label: "Roof Repair & Maintenance", href: "/contact" },
+      { label: "Emergency Roofing Services", href: "/contact" },
+      { label: "Roof Tarping", href: "/contact" },
+      { label: "Metal Roof", href: "/contact" },
+      { label: "Shingles Roof", href: "/contact" },
+      { label: "Tile Roof", href: "/contact" },
     ],
     cta: { label: "Residential Services", href: "/residential-roofing" },
   },

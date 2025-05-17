@@ -4,6 +4,7 @@ import './CommitmentComponent.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //  Commitments Data
 const commitment = [
@@ -50,12 +51,15 @@ function CommitmentComponent() {
                 <Slider  {...settings} >
                     {commitment.map((commit, index) => (
                         <Col key={index}>
-                            <Card className='commit-col'>
+                            <Card className='commit-col d-flex  flex-column align-items-center '>
                                 <div className='commit-circle'>
                                     <p className='commit-number'>0{index + 1}</p>
                                 </div>
-                                <h2>{commit.heading}</h2>
-                                <p className='card-text'>{commit.text}</p>
+                                <div className='d-flex  flex-column align-items-center justify-content-center mx-auto'>
+                                    <h2 className='commit-headd mx-auto text-center d-flex justify-content-center align-content-center'>{commit.heading}</h2>
+                                    <p className=' mx-auto text-center d-flex justify-content-center align-content-center'>{commit.text}</p>
+                                </div>
+
                             </Card>
                         </Col>
                     ))}

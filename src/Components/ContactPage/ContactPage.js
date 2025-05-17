@@ -156,7 +156,7 @@ function ContactPage() {
                         <div className={`contact-sections ${visible ? 'fade-in visible' : 'fade-in'}`}>
                             <div className='contact-text'>
                                 <p style={{ fontWeight: "bold", fontSize: "23px" }}><IoMailOutline className='contact-icon' /> E-mail</p>
-                                <p className='address-text'>sales - roofs@ultimatesolutionsit.com</p>
+                                <p className='address-text'>roofs@ultimatesroofing.com</p>
                             </div>
                         </div>
                     </Col>

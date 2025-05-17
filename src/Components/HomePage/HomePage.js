@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Col, Row, Toast, Modal } from "react-bootstrap";
 import videoSource from "../../assets/HomePageImages/Best_Roofing_Company_in_Across_OhioUltimatesRoofingLLC.mp4";
-import AboutHouse from "../../assets/HomePageImages/AboutHouse.png";
+
 import "./HomePage.css";
 import PlayStore from "../../assets/HomePageImages/PlayStore.png";
 import AppStore from "../../assets/HomePageImages/AppStore.png";
@@ -17,6 +17,9 @@ import { Helmet } from "react-helmet";
 import InstantRoofQuote from "../MainHeader/InstantRoofQuote";
 import { IoMdPhonePortrait } from "react-icons/io";
 import Video from "./Vedio/Video";
+import About from "./Aboutsec/About";
+
+
 
 function HomePage() {
   const navigate = useNavigate();
@@ -78,41 +81,7 @@ function HomePage() {
       <ServiceCardsComponent />
 
       {/*   About us  */}
-      <div className="about-section">
-        <Row style={{ margin: "0px" }} className="row-about">
-          <Col className="about-col">
-            <div className="about-div">
-              <h2 className="about-heading">
-                Welcome to Ultimates Roofing, Where Excellence Meets Innovation
-              </h2>
-              <p className="about-text">
-                Ultimates Roofing LLC presents a comprehensive array of
-                services, encompassing new roof installations, meticulous roof
-                maintenance, expert roof repairs, and cutting-edge re-roofing
-                solutions for Residential and Commercial ventures. Our expertise
-                extends to homes, offices, warehouses, and multi-family
-                dwellings. Over the years, clients have recognized and valued
-                the adept and professional service synonymous with us.
-              </p>
-              <Button
-                onClick={() => {
-                  navigate("/about");
-                }}
-                className="estimate-btn"
-              >
-                More About Us
-              </Button>
-            </div>
-          </Col>
-          <Col>
-            <img
-              className="about-img"
-              src={AboutHouse}
-              alt="Ultimates Roofing LLC About"
-            />
-          </Col>
-        </Row>
-      </div>
+<About></About>
 
       {/**  Mission, Value and Vision Cards */}
       <CardsComponent />

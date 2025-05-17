@@ -87,10 +87,10 @@ const Footer = () => {
     </div>
     <ul className="list-unstyled mt-3">
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/residential-roofing" className="text-white text-decoration-none small link-hover">“Free” Roof Inspections & Estimates</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/residential-roof-replacement" className="text-white text-decoration-none small link-hover">Roof Replacement</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/residential-roof-installation" className="text-white text-decoration-none small link-hover">Roof Installation</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/residential-roof-repair" className="text-white text-decoration-none small link-hover">Roof Repair & Maintenance</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/residential-emergency-services" className="text-white text-decoration-none small link-hover">Emergency Roofing Services</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Roof Replacement</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Roof Installation</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Roof Repair & Maintenance</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Emergency Roofing Services</Link></li>
     </ul>
   </Col>
 
@@ -103,10 +103,10 @@ const Footer = () => {
     </div>
     <ul className="list-unstyled mt-3">
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/commercial-roofing" className="text-white text-decoration-none small link-hover">“Free” Roof Inspections and Estimates</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/commercial-roof-replacement" className="text-white text-decoration-none small link-hover">Roof Replacement</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/commercial-roof-installation" className="text-white text-decoration-none small link-hover">Roof Installation</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/commercial-roof-repair" className="text-white text-decoration-none small link-hover">Roof Repair & Maintenance</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/commercial-emergency-services" className="text-white text-decoration-none small link-hover">Emergency Roofing Services</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Roof Replacement</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Roof Installation</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Roof Repair & Maintenance</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Emergency Roofing Services</Link></li>
     </ul>
   </Col>
 
@@ -119,10 +119,10 @@ const Footer = () => {
     </div>
     <ul className="list-unstyled mt-3">
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Contact</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/" className="text-white text-decoration-none small link-hover">Client Portal Login</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Client Portal Login</Link></li>
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/projects" className="text-white text-decoration-none small link-hover">Service Area</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/" className="text-white text-decoration-none small link-hover">Partners & Listings</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/" className="text-white text-decoration-none small link-hover">Privacy Policy</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Partners & Listings</Link></li>
+      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Privacy Policy</Link></li>
     </ul>
   </Col>
 </Row>

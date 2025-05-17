@@ -36,7 +36,7 @@ const Video = () => {
       {/* Overlay Content */}
       <div className="content-overlay font">
         <h1 className="main-heading font mx-auto ">
-          Your Trusted Roofing Company in Across Ohio for Quality Service to Meet Your Needs
+          Your Trusted Roofing Company  Across Ohio for Quality Service to Meet Your Needs
         </h1>
       
 <div className="d-flex justify-content-center text-white mx-auto">
