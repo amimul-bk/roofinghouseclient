@@ -1,153 +1,118 @@
-/* Fonts  */
+/* ValueCardsComponent.css */
 @font-face {
-    font-family: hauora-medium;
-    src: url(../../../../public/Hauora-Medium.ttf);
+  font-family: hauora-medium;
+  src: url(../../../../public/Hauora-Medium.ttf);
 }
 
 @font-face {
-    font-family: hauora-semibold;
-    src: url(../../../../public/Hauora-SemiBold.ttf);
+  font-family: hauora-semibold;
+  src: url(../../../../public/Hauora-SemiBold.ttf);
 }
 
 .cards {
-    font-family: hauora-medium;
+  font-family: hauora-medium;
+  padding: 2rem 0px;
+  margin: 50px 0px;
 }
 
-.value-cards {
-    width: 20rem;
-    border: none;
-    margin: 2vh auto;
+.value-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
 }
 
-.value-title {
-    font-size: 2rem;
-    font-family: hauora-medium;
-    font-weight: 500;
+.value-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.value-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.value-card:hover .value-icon {
+  transform: rotate(5deg);
+  transition: transform 0.3s ease;
+}
+
+.value-card-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
 }
 
 .value-img {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .value-circle {
-    background-color: #fff;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 35px;
-    z-index: 1;
-}
-
-.value-circle1 {
-    position: absolute;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .value-icon {
-    font-size: 1rem;
-    color: #000;
-    margin: 0;
+  width: 30px;
+  height: 30px;
 }
 
 .value-body {
-    padding: 1rem;
-    position: relative;
-}
-
-.value-text {
-    font-size: 20px;
+  padding: 1.25rem;
+  flex-grow: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .value-title {
-    font-size: 1.7rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: hauora-semibold;
 }
 
-/* Responsive media queries */
-@media only screen and (max-width: 1863px) {
-    .value-cards {
-        width: 20rem;
-    }
-
-    .value-title {
-        font-size: 25px;
-    }
-
-    .value-text {
-        font-size: 1rem;
-    }
+.value-text {
+  font-size: 1rem;
+  color: #444;
 }
 
-@media only screen and (max-width: 1448px) {
-    .value-cards {
-        width: 16rem;
-        height: 18rem;
-    }
-
-    .value-body {
-        padding: 6px;
-    }
+@media (max-width: 875px) {
+ .cards {
+  margin: 40px 0px;
+  
 }
-
-@media only screen and (max-width: 1160px) {
-    .value-cards {
-        width: 13.5rem;
-        height: 17.5rem;
-    }
-
-    .value-title {
-        font-size: 21px;
-    }
 }
+@media (max-width: 575px) {
+  .value-card {
+    width: 100%;
+  }
 
-@media only screen and (max-width: 999px) {
-    .value-cards {
-        width: 20rem;
-        height: 17.5rem;
-    }
+  .value-title {
+    font-size: 1.2rem;
+  }
 
-    .value-title {
-        font-size: 21px;
-    }
-}
-
-
-@media only screen and (min-width: 631px) and (max-width: 778px) {
-    .value-cards {
-        width: 17rem;
-        height: 17.5rem;
-    }
-}
-
-@media only screen and (min-width: 546px) and (max-width: 631px) {
-    .value-cards {
-        width: 15rem;
-        height: 17.5rem;
-    }
-}
-
-@media only screen and (max-width: 545px) {
-    .value-cards {
-        width: 100%;
-        height: 100%;
-    }
-
-    .value-body {
-        padding: 1rem;
-    }
-
-    .value-text {
-        padding-right: 2rem;
-    }
+  .value-text {
+    font-size: 0.95rem;
+  }
 }

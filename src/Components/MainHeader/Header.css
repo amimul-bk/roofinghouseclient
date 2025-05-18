@@ -27,6 +27,7 @@
   box-shadow: 0 2px 8px var(--irs-shadow);
   font-family: var(--nav-font);
   z-index: 1100;
+  
 }
 
 .logoImg {
@@ -230,7 +231,7 @@
   
   color: #fff !important;
   text-align: center;
-  padding: 6px 12px;
+  padding: 8px 18px;
   border: none !important;
   font-size: 16px;
   

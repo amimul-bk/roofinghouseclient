@@ -89,7 +89,7 @@ function chunk(items, cols) {
 export default function Header() {
   const isMobile = window.innerWidth <= 1024;
   return (
-    <Navbar expand="xl" sticky="top" className="irs-navbar">
+    <Navbar expand="xl" sticky="top" className="irs-navbar py-3">
       <Container>
         <Navbar.Brand href="/home">
           <img src={logo} alt="IRS Logo" className="logoImg" />
