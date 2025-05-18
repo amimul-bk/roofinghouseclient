@@ -1,15 +1,15 @@
 @font-face {
-    font-family: hauora-medium;
-    src: url(../../../public/Hauora-Medium.ttf);
+  font-family: hauora-medium;
+  src: url(../../../public/Hauora-Medium.ttf);
 }
 @font-face {
-    font-family: hauora-light;
-    src: url(../../../public/Hauora-Light.ttf);
+  font-family: hauora-light;
+  src: url(../../../public/Hauora-Light.ttf);
 }
 
 :root {
   --irs-red: #c1272d;
-  --irs-red-dark: #B22335;
+  --irs-red-dark: #b22335;
   --irs-gray: #333333;
   --irs-shadow: rgba(0, 0, 0, 0.1);
   --nav-font: "Poppins", sans-serif;
@@ -17,7 +17,7 @@
   --arrow-size: 24px;
   --arrow-bar: 2px;
 }
-.color{
+.color {
   color: #b22335;
 }
 /* ── Navbar Base ─────────────────────── */
@@ -86,14 +86,12 @@
 
 .irs-nav .nav-item.dropdown {
   position: relative;
- 
   text-align: center;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  /* margin-top: var(--bs-dropdown-spacer); */
   margin-top: 15px !important;
 }
 
@@ -105,23 +103,24 @@
 }
 
 .dropdown-menu.mega-menu {
-  position: absolute; /* already is, but be explicit */
-  top: calc(100% + 8px); /* same vertical gap */
-  left: 50% !important; /* anchor its left‐edge at 50% of the parent */
-  right: auto !important; /* cancel any Bootstrap “right” you had */
-  transform: translateX(-50%); /* shift back by half its own width */
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%);
 
-  /* keep your existing styling */
+  /* */
+  min-width: max-content !important;
+  width: auto !important;
+  white-space: nowrap;
+  padding: 1.25rem 2.5rem 0 2.5rem;
+
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 1.25rem 1.5rem 0 1.5rem;
   overflow: visible;
-  /* min-width: 240px; */
-  /* width: max-content; */
 }
 
-/* Triangle Arrow Fixed */
 .dropdown-arrow {
   visibility: visible;
   position: absolute;
@@ -145,18 +144,23 @@
   margin-right: 7px;
   color: var(--irs-red);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500;  
 }
 
 .mega-content {
   display: flex;
   gap: 2rem;
+  width: 100%;
+  flex-wrap: nowrap;
+  /*  */
+  padding: 0 1rem;
 }
 
 .mega-col {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  min-width: max-content;
 }
 .cols-1 .mega-col,
 .cols-2 .mega-col,
@@ -172,13 +176,11 @@
   color: var(--irs-gray);
   font-size: 0.95rem;
   font-weight: 500;
-  /* white-space: nowrap; */
   transition: color 0.2s;
-
-  white-space: normal; /* allow text to wrap */
-  word-break: break-word; /* break long words if needed */
+  white-space: normal;
+  word-break: break-word;
   overflow-wrap: break-word;
-  max-width: 400px; /* or any width you prefer */
+  max-width: 400px;
 }
 
 .mega-item:hover {
@@ -187,25 +189,30 @@
 
 .mega-footer {
   margin-top: 1.5rem;
-  padding: 0 1.5rem 1rem;
+
+  /*  */
+  padding: 0 2rem 1rem;
 }
 .mega-cta {
   display: block;
   background-color: var(--irs-red) !important;
   color: #fff !important;
   text-align: center;
-  padding: 0.75rem 0;
+  /* padding: 0.75rem 0; */
+  padding: 0.75rem 2rem;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 600;
   transition: background 0.2s, transform 0.2s;
 }
+
 .mega-cta-nav {
   display: block;
   background-color: var(--irs-red) !important;
   color: #fff !important;
   text-align: center;
-  padding: 0.75rem 0;
+  /* padding: 0.75rem 0; */
+  padding: 0.75rem 1.3rem;
   border: none !important;
   font-size: 1rem;
   font-weight: 600;
@@ -216,12 +223,37 @@
   background-color: var(--irs-red-dark);
   transform: scale(1.02);
 }
+
 /* button  */
+.quote-btn{
+  display: block;
+  
+  color: #fff !important;
+  text-align: center;
+  padding: 6px 12px;
+  border: none !important;
+  font-size: 16px;
+  
+  margin-top: 10px;
+  transition: background 0.2s, transform 0.2s;
+  background-color: #b22335 !important;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(7, 7, 7, 0.3);
+  transition: all 0.3s ease-in-out;
+  font-family: hauora-light;
+}
+.quote-btn:hover {
+  background-color: #3d3b6d !important;
+  box-shadow: 0 8px 20px #3d3b6d !important;
+  transform: scale(1.05);
+}
 .custom-btn {
   background-color: #b22335 !important;
   border-radius: 50px;
   box-shadow: 0 6px 15px rgba(7, 7, 7, 0.3);
   transition: all 0.3s ease-in-out;
+  font-family: hauora-light;
+  
 }
 
 .custom-btn:hover {
@@ -229,8 +261,9 @@
   box-shadow: 0 8px 20px #3d3b6d !important;
   transform: scale(1.05);
 }
-.navbar-expand-xl .navbar-nav .dropdown-menu{
-   box-shadow: 0 6px 15px rgba(11, 11, 11, 0.3);
+
+.navbar-expand-xl .navbar-nav .dropdown-menu {
+  box-shadow: 0 6px 15px rgba(11, 11, 11, 0.3);
 }
 /* ── Instant Quote Form ───────────────── */
 
@@ -279,43 +312,39 @@
 .navbar-expand-xl .navbar-nav .dropdown-menu {
   padding: 15px 0 0 0 !important;
 }
-.dropdown-toggle::after{
-color: #b22335;
+.dropdown-toggle::after {
+  color: #b22335;
 }
-/* এই ক্লাসগুলোতে ফন্ট অ্যাপ্লাই করতে হবে */
+
 .mega-item,
 .dropdown-item,
 .mega-cta-nav {
-    font-family: hauora-medium;
+  font-family: hauora-medium;
 }
 .mega-item,
 .mega-cta-nav,
 .nav-link[href="/contact"] {
-    font-family: hauora-medium !important;
+  font-family: hauora-medium !important;
 }
-/* Header.css এ নিচের কোড যোগ করুন */
 
-/* ডেস্কটপের জন্য */
 .irs-nav .nav-item.dropdown.show .nav-link {
   color: var(--irs-red) !important;
 }
-/* Target all form labels */
+
 .quote-form-formik .form-group label {
-    font-family: hauora-medium !important;
-   
-    /* Add other label styles if needed */
+  font-family: hauora-medium !important;
 }
-.fontHauora{
- font-family: hauora-medium !important;
+.fontHauora {
+  font-family: hauora-medium !important;
 }
-.fontLight{
-   font-family: hauora-light !important;
+.fontLight {
+  font-family: hauora-light !important;
 }
 @media (max-width: 1024px) {
-   .mega-item,
-    .nav-link[href="/contact"] {
-        font-family: hauora-medium !important;
-    }
+  .mega-item,
+  .nav-link[href="/contact"] {
+    font-family: hauora-medium !important;
+  }
   .scrollMobileNav {
     height: 100vh;
     width: auto;
@@ -330,6 +359,8 @@ color: #b22335;
   .mega-content {
     flex-direction: column;
     gap: 0.75rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
   }
   .mega-footer {
     padding: 0.75rem 1rem;
@@ -345,9 +376,12 @@ color: #b22335;
     visibility: hidden;
   }
   .dropdown-menu.mega-menu {
-    left: 0% !important; /* anchor its left‐edge at 50% of the parent */
-    /* min-width: 100% !important; */
-    /* width: max-content; */
+    left: 0% !important;
+    width: 100% !important;
+    min-width: auto !important;
+    max-width: calc(100% - 10px);
+    transform: none !important;
+    padding: 1.25rem 1rem 0 1rem;
   }
 
   .mega-menu {
@@ -366,7 +400,7 @@ color: #b22335;
     display: flex;
     justify-content: center;
   }
-   .irs-nav .nav-item.dropdown.show .nav-link {
+  .irs-nav .nav-item.dropdown.show .nav-link {
     color: var(--irs-red) !important;
   }
 }

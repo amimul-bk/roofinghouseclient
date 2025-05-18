@@ -14,12 +14,12 @@ function ContactModal() {
 
     return (
         <>
-            <div className="d-flex align-items-center gap-2  ">
+            <div className="d-flex align-items-center gap-2 ">
 
 
                 <Button
                     variant="primary"
-                    className="mega-cta-nav custom-btn"
+                    className="quote-btn fw-lighter"
                     onClick={handleShow}
                 >
                     Instant Roof Quote
@@ -27,7 +27,7 @@ function ContactModal() {
             </div>
 
 
-            <Modal show={showModal} onHide={handleClose} centered>
+            <Modal show={showModal} onHide={handleClose} centered className="modalpopup" >
                 <Modal.Header closeButton>
                     <Modal.Title className="fontHauora">Instant Roof Quote</Modal.Title>
 
