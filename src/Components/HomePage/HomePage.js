@@ -84,13 +84,13 @@ function HomePage() {
 <About></About>
 
       {/**  Mission, Value and Vision Cards */}
-      <CardsComponent />
-
-      {/**  Commitment */}
-      <CommitmentComponent />
+      
 
       {/**    values */}
       <ValueCardsComponent />
+
+      {/**  Commitment */}
+      <CommitmentComponent />
 
       {/**    videos */}
       <VideosComponent />
@@ -99,7 +99,8 @@ function HomePage() {
       <LogosComponent />
 
       {/**  download app */}
-      <Row className="app-section">
+      <Row className="app-section mx-auto justify-content-center align-items-center">
+        
         <Col>
           <h1 className="app-heading">Download Our Mobile App</h1>
           <p className="app-text">
@@ -109,7 +110,7 @@ function HomePage() {
             easier.
           </p>
           <h5 className="store-heading">Available on:</h5>
-          <div className="apps-store">
+          <div className="apps-store mx-auto ">
             <div className="app-icons">
               <img
                 style={{ marginLeft: "1vh", width: "60px", borderRadius: '15px' }}

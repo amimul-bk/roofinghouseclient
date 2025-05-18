@@ -155,7 +155,7 @@
 @media (max-width: 778px),
 (min-width: 675px) and (max-width: 778px) {
     .videos-section {
-        margin: 5rem 0rem 0rem 0rem;
+        margin: 1rem 0rem 0rem 0rem;
     }
 
     .videos-slide {

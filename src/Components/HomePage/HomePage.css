@@ -15,8 +15,11 @@
 /*      Download App   */
 .app-section {
     background-color: #F5F5F5;
-    padding: 7vh 5rem;
+    padding: 4rem;
+    
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px !important;
 }
 
@@ -130,7 +133,7 @@
     }
 
     .app-section {
-        padding: 7vh 2rem;
+       padding-right: 1rem;
     }
 
     .mobile-img {
@@ -148,6 +151,10 @@
     .store-heading {
         font-size: 1.5rem;
     }
+    .apps-store {
+align-items: center;
+justify-content: center;
+}
 }
 
 @media only screen and (min-width: 545px) and (max-width: 675px) {
@@ -163,6 +170,9 @@
 }
 
 @media only screen and (min-width: 545px) and (max-width: 778px) {
+     .mobile-view-none {
+        display: none;
+    }
     .mobile-img {
         display: none;
     }
@@ -195,6 +205,9 @@
 }
 
 @media (max-width: 600px) {
+     .mobile-view-none {
+        display: none;
+    }
     .appstore-toast {
         right: 30%;
     }
@@ -207,6 +220,9 @@
 }
 
 @media only screen and (min-width: 410px) and (max-width: 545px) {
+     .mobile-view-none {
+        display: none;
+    }
     .mobile-img {
         display: none;
     }
@@ -224,6 +240,12 @@
 
 
 @media only screen and (max-width: 545px) {
+    .app-section{
+    padding: 1rem;
+    }
+     .mobile-view-none {
+        display: none;
+    }
     .about-section {
         padding-left: 1rem;
     }
@@ -293,7 +315,7 @@
     }
 
     .app-section {
-        padding: 7vh 15px;
+        padding: 17px 5px;
     }
 
     .app-icons {

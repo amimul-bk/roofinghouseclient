@@ -56,30 +56,31 @@ function ValueCardsComponent() {
   }, []);
 
   return (
-    <Container>
-      <div className="cards">
-        <Row className="gx-xl-3 gx-4 gy-4">
-          {values.map((value, index) => (
-            <Col key={index} xs={12} sm={6} md={6} lg={6} xl={3}>
-              <Card className="value-card">
-                <div className="value-card-inner">
-                  <div className="value-circle">
-                    <img src={value.icon} alt="Value Icon" className="value-icon" />
+    <div className="value-section-wrapper">
+      <Container>
+        <div className="cards">
+          <Row className="gx-4 gy-4">
+            {values.map((value, index) => (
+              <Col key={index} xs={12} sm={6} md={6} lg={6} xl={3}>
+                <Card className="value-card">
+                  <div className="value-card-inner">
+                    <div className="value-circle">
+                      <img src={value.icon} alt="Value Icon" className="value-icon" />
+                    </div>
+                    <Card.Img className="value-img" src={value.imageUrl} alt={value.heading} />
+                    <Card.Body className="value-body">
+                      <Card.Title className="value-title">{value.heading}</Card.Title>
+                      <p className="value-text">{value.text}</p>
+                    </Card.Body>
                   </div>
-                  <Card.Img className="value-img" src={value.imageUrl} alt={value.heading} />
-                  <Card.Body className="value-body">
-                    <Card.Title className="value-title">{value.heading}</Card.Title>
-                    <p className="value-text">{value.text}</p>
-                  </Card.Body>
-                </div>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </div>
-    </Container>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </Container>
+    </div>
   );
 }
 
 export default ValueCardsComponent;
-
