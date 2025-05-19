@@ -1,0 +1,77 @@
+@font-face {
+  font-family: hauora-medium;
+  src: url(../../../../public/Hauora-Medium.ttf);
+}
+.font{
+     font-family: hauora-medium !important;
+}
+.black {
+  background-color: #b22335;
+}
+
+.bg-color {
+  background-color: #3d3b6d !important;
+  box-shadow: 0 8px 20px #3d3b6d;
+}
+
+.onhover:hover {
+  box-shadow: 0 8px 20px #b22335;
+}
+
+.teamhead {
+  font-family: hauora-medium !important;
+  font-size: calc(1.2rem + 1vw);
+}
+
+.team-member-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member-image:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  padding: 20px 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+/* Swiper nav buttons */
+.swiper-button-prevs,
+.swiper-button-nexts {
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 30px;
+  transform: rotate(180deg);
+}
+
+.swiper-button-nexts .arrow-right {
+  transform: rotate(0deg);
+}
+
+.swiper-pagination {
+  margin-top: 30px !important;
+  position: relative !important;
+  bottom: 0 !important;
+}
+
+/* Hide navigation arrows on small screens */
+@media (max-width: 639px) {
+  .swiper-nav-wrapper {
+    display: none;
+  }
+  .teamhead {
+  
+  font-size: 1.5rem;
+}
+}

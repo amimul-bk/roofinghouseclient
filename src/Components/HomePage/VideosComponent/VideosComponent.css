@@ -5,7 +5,8 @@
 
 /*  Videos carousel Section  */
 .videos-section {
-    margin: 0rem 0rem 0rem 4rem;
+    margin: 50px 0px;
+    margin-left: 4rem;
 }
 
 .video-container {
@@ -155,7 +156,8 @@
 @media (max-width: 778px),
 (min-width: 675px) and (max-width: 778px) {
     .videos-section {
-        margin: 1rem 0rem 0rem 0rem;
+        margin-left: 1rem;
+        margin: 40px 0px;
     }
 
     .videos-slide {
@@ -202,6 +204,11 @@
     .videos-heading {
         font-size: calc(1.8rem + 1vw);
     }
+
+    .videos-section {
+        margin: 40px 0px;
+    }
+
 }
 
 @media only screen and (max-width: 410px) {
@@ -227,6 +234,11 @@
         font-size: calc(1.4rem + 1vw);
         margin-top: 1vh;
     }
+
+    .videos-section {
+        margin: 40px 0px;
+    }
+
 }
 
 @media only screen and (max-width: 352px) {

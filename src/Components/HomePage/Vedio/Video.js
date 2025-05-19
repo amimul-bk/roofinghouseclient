@@ -1,20 +1,15 @@
-
 import React, { useState } from "react";
 import { Button, Toast } from "react-bootstrap";
 import { IoMdPhonePortrait } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import videoSource from "../../../assets/HomePageImages/Best_Roofing_Company_in_Across_OhioUltimatesRoofingLLC.mp4";
 import './Video.css'
-import { MdRoofing } from "react-icons/md";
-import { BsFillHouseHeartFill } from "react-icons/bs";
-import { GrVmMaintenance } from "react-icons/gr";
-import { MdEmergency } from "react-icons/md";
 import { TbTargetArrow } from "react-icons/tb";
 import { GiMicroscope } from "react-icons/gi";
 import ContactModal from "../ContactModal";
 
 const Video = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
   const [toast, setToast] = useState(true);
   const [toast1, setToast1] = useState(true);
   const [showModal, setShowModal] = useState(false);

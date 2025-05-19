@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Button, Col, Row, Toast, Modal } from "react-bootstrap";
+
+import { Col, Row, Toast, Modal } from "react-bootstrap";
 import videoSource from "../../assets/HomePageImages/Best_Roofing_Company_in_Across_OhioUltimatesRoofingLLC.mp4";
 
 import "./HomePage.css";

@@ -13,6 +13,7 @@ import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 import SuccessPage from "./Components/ContactPage/SuccessPage";
 import ReviewsPage from "./Components/ReviewsPage/ReviewsPage";
 import Header from "./Components/MainHeader/Header";
+import OurTeamPage from "./Components/OurTeamPage/OurTeamPage";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
                 <Route path="/reviews" element={<ReviewsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/success-page" element={<SuccessPage />} />
+                <Route path="/our-team" element={<OurTeamPage />} />
+
                 <Route path="*" element={<HomePage />} />
             </Routes>
             <Footer />

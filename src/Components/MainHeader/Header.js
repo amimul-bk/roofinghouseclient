@@ -68,6 +68,7 @@ const menus = {
     cols: 1,
     items: [
       { label: "About", href: "/about" },
+      { label: "Our-team", href: "/our-team" },
       { label: "Projects", href: "/projects" },
       { label: "Reviews", href: "/reviews" },
       { label: "Career With Us", href: "/success-page" }, // You may want to create this route later
