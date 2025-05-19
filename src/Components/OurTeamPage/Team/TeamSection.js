@@ -37,12 +37,12 @@ const teamMembers = [
 
 const TeamSection = () => {
   const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const nextRef = useRef(null); 
 
   return (
-    <div className="black">
+    <div className="bg-white">
       <div className="container py-5">
-        <h2 className="text-center fw-bold mb-4 teamhead text-white">Dream team</h2>
+        <h2 className="text-center fw-bold mb-4 teamhead text-black">Dream team</h2>
         <div className="position-relative">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -80,15 +80,15 @@ const TeamSection = () => {
             className="team-swiper"
           >
             {teamMembers.map((member, index) => (
-              <SwiperSlide key={index} className="d-flex justify-content-center bg-color onhover">
+              <SwiperSlide key={index} className="d-flex justify-content-center onhover bg-color">
                 <div className="card border-0 text-center bg-color">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="img-fluid team-member-image mx-auto"
                   />
-                  <h5 className="fw-bold mt-3 mb-1 text-white font">{member.name}</h5>
-                  <p className="mb-0 text-white font">{member.position}</p>
+                  <h5 className="fw-bold mt-3 mb-1 text-black font">{member.name}</h5>
+                  <p className="mb-0 text-black font">{member.position}</p>
                 </div>
               </SwiperSlide>
             ))}

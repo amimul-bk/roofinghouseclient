@@ -14,7 +14,9 @@ import SuccessPage from "./Components/ContactPage/SuccessPage";
 import ReviewsPage from "./Components/ReviewsPage/ReviewsPage";
 import Header from "./Components/MainHeader/Header";
 import OurTeamPage from "./Components/OurTeamPage/OurTeamPage";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'glightbox/dist/css/glightbox.min.css';
+
 
 function App() {
     return (

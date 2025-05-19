@@ -29,7 +29,7 @@ body {
   transform: translateY(40px);
   transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
   border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ 
   border-radius: 20px;
   background-color: #fff;
   height: 100%;
@@ -44,7 +44,7 @@ body {
 
 .value-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
 }
 
 .value-card:hover .value-icon {
@@ -93,6 +93,7 @@ body {
   flex-grow: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .value-title {

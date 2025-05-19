@@ -5,14 +5,11 @@
 .font{
      font-family: hauora-medium !important;
 }
-.black {
-  background-color: #b22335;
-}
+
 
 .bg-color {
-  background-color: #3d3b6d !important;
-  box-shadow: 0 8px 20px #3d3b6d;
-}
+  background-color: rgb(239, 239, 239) !important;
+  }
 
 .onhover:hover {
   box-shadow: 0 8px 20px #b22335;

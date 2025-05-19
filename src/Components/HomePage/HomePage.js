@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import { Col, Row, Toast, Modal } from "react-bootstrap";
 import videoSource from "../../assets/HomePageImages/Best_Roofing_Company_in_Across_OhioUltimatesRoofingLLC.mp4";
-
 import "./HomePage.css";
 import PlayStore from "../../assets/HomePageImages/PlayStore.png";
 import AppStore from "../../assets/HomePageImages/AppStore.png";
@@ -19,6 +18,7 @@ import InstantRoofQuote from "../MainHeader/InstantRoofQuote";
 import { IoMdPhonePortrait } from "react-icons/io";
 import Video from "./Vedio/Video";
 import About from "./Aboutsec/About";
+import OurProjects from "./OurProjects/OurProjects";
 
 
 
@@ -77,15 +77,15 @@ function HomePage() {
         <html lang="en" />
       </Helmet>
 
-    <Video></Video>
+      <Video></Video>
       {/**  our services */}
       <ServiceCardsComponent />
 
       {/*   About us  */}
-<About></About>
+      <About></About>
 
       {/**  Mission, Value and Vision Cards */}
-      
+
 
       {/**    values */}
       <ValueCardsComponent />
@@ -93,15 +93,20 @@ function HomePage() {
       {/**  Commitment */}
       <CommitmentComponent />
 
+      {/* project  */}
+      <OurProjects></OurProjects>
+
       {/**    videos */}
       <VideosComponent />
+
+
 
       {/**    logo slider */}
       <LogosComponent />
 
       {/**  download app */}
       <Row className="app-section mx-auto justify-content-center align-items-center">
-        
+
         <Col>
           <h1 className="app-heading">Download Our Mobile App</h1>
           <p className="app-text">
