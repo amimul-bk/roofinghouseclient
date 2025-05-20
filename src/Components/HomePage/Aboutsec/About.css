@@ -6,7 +6,8 @@
 .about-section {
     background-image: url('../../../assets/HomePageImages/AboutBackground.jpg');
     background-size: cover;
-    padding: 4rem 0rem 0rem 4rem;
+    padding: 3rem 0rem;
+    padding-left: 3rem;
     width: 100%;
     position: relative;
     font-family: hauora-medium !important;
@@ -21,9 +22,7 @@
 }
 
 .about-heading {
-    font-size: 1.5rem ;
-    font-family: hauora-medium;
-    font-weight: 800;
+    font-size: calc(1.3rem + 1.7vw);
     font-family: hauora-medium !important;
 }
 
@@ -108,7 +107,7 @@
     }
 
     .about-section {
-        padding-left: 10px;
+        padding-left: 1rem;
     }
 
     .about-section {
@@ -119,20 +118,17 @@
 
 @media (max-width: 500px) {
     .about-heading {
-        font-size: 18px;
-
-    }
+        font-size: 23px;
+}
 
     .about-text {
         font-size: 16px;
-        padding: 5px 0px;
+        padding: 5px 2px;
     }
 
-    .about-section {
-        padding-left: 5px;
-    }
+   
 
     .about-section {
-        padding: 1rem 0rem 0rem 1rem;
+        padding: 3rem 5px;
     }
 }

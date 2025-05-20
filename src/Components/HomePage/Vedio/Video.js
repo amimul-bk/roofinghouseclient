@@ -36,7 +36,7 @@ const Video = () => {
       
 <div className="d-flex justify-content-center text-white mx-auto">
   
-    <p className="font fw-bolder ">  LICENSED | BONDED | INSURED</p>
+    <p className="font ">  LICENSED | BONDED | INSURED</p>
 </div>
         <div className="btn-div d-flex mx-auto align-items-center justify-content-center font">
              <Button className="phonebtn">
