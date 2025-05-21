@@ -57,9 +57,9 @@ function ValueCardsComponent() {
 
   return (
     <div className="value-section-wrapper">
-      <Container>
+     
         <div className="cards">
-          <Row className="gx-4 gy-4">
+          <Row className="gx-3 gy-4">
             {values.map((value, index) => (
               <Col key={index} xs={12} sm={6} md={6} lg={6} xl={3}>
                 <Card className="value-card">
@@ -78,7 +78,7 @@ function ValueCardsComponent() {
             ))}
           </Row>
         </div>
-      </Container>
+      
     </div>
   );
 }

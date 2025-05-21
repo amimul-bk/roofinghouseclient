@@ -2,73 +2,84 @@
   font-family: hauora-medium;
   src: url(../../../../public/Hauora-Medium.ttf);
 }
-.font{
-     font-family: hauora-medium !important;
-}
 
-
-.bg-color {
-  background-color: rgb(239, 239, 239) !important;
-  }
-
-.onhover:hover {
-  box-shadow: 0 8px 20px #b22335;
+.font {
+  font-family: hauora-medium !important;
 }
 
 .teamhead {
   font-family: hauora-medium !important;
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1.5rem + 1.5vw);
+}
+
+.team-section {
+  margin-block: 50px;
+  margin-inline: 3rem;
+}
+.red-bg{
+  color: #b22335;
+}
+.team-card {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin: 0 !important; /* remove spacing from margin */
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px #b22335;
 }
 
 .team-member-image {
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
 .team-member-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
-.card {
-  padding: 20px 10px;
-  background-color: #ffffff;
-  border-radius: 15px;
+.team-info p {
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 3px;
 }
 
-/* Swiper nav buttons */
-.swiper-button-prevs,
-.swiper-button-nexts {
-  cursor: pointer;
-  z-index: 10;
+/* Social icon style */
+.social-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #b22335;
+  border: 1px solid #b22335;
+  transition: all 0.3s ease-in-out;
 }
 
-.arrow-left,
-.arrow-right {
-  width: 30px;
-  transform: rotate(180deg);
+.social-icon:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
 }
 
-.swiper-button-nexts .arrow-right {
-  transform: rotate(0deg);
-}
-
-.swiper-pagination {
-  margin-top: 30px !important;
-  position: relative !important;
-  bottom: 0 !important;
-}
-
-/* Hide navigation arrows on small screens */
-@media (max-width: 639px) {
-  .swiper-nav-wrapper {
-    display: none;
+@media (max-width: 768px) {
+  .team-section {
+    margin-inline: 1rem;
   }
-  .teamhead {
-  
-  font-size: 1.5rem;
-}
+
+  .team-member-image {
+    width: 140px;
+    height: 140px;
+  }
 }

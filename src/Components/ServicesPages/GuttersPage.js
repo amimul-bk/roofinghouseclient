@@ -17,9 +17,10 @@ function GuttersPage() {
     return (
         <div>
             <Helmet>
-                <title>Ultimates Roofing LLC - Gutters</title>
+                <title>Professional Gutter Installation & Repair Services in Ohio | Ultimates Roofing LLC</title>
                 <link rel="canonical" href="https://www.ultimatesroofing.com/gutters" />
-                <meta name="description" content="Ultimates Roofing LLC provides top-notch gutter solutions. Ensure proper drainage and protection for your property with our expert gutter installations and repairs." />
+                <meta name="description"
+                 content="Ultimates Roofing offers top-notch gutter solutions to ensure proper drainage and protect your property with expert gutter installations and repairs across Ohio." />
                 <meta name='keywords' content='Ultimates Roofing llc, Ultimates Roofing, Best Roofing design in columbus,ohio, Best Roofing Companies in columbus ohio, ultimates roof replacement near me, best roofing designs for small houses, best roofing drip edge, best roof columbus, best roofing company near me, ultimates roof replacement columbus ohio, 
                 best roofing company, ultimates roof repair columbus ohio, affordable roof, eplacement services in columbus,ohio, luxury home roofing solutions near me, roof repair, Roofer near me, roofing repairs near me, roofing sheet' />
                 <meta name="author" content="Ultimates Roofing LLC" />

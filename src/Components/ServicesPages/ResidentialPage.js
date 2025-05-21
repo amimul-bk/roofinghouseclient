@@ -33,9 +33,10 @@ function ResidentialPage() {
     return (
         <div>
             <Helmet>
-                <title>Ultimates Roofing LLC - Residential Roofing</title>
+                <title>Trusted Residential Roofing Services in Ohio | Ultimates Roofing LLC</title>
                 <link rel="canonical" href="https://www.ultimatesroofing.com/residential-roofing" />
-                <meta name="description" content="Discover Ultimates Roofing LLC's expert residential roofing services. From roof installations to repairs, we provide high-quality solutions with a focus on durability and aesthetics." />
+                <meta name="description"
+             content="Ultimates Roofing offers premium residential roofing installation, inspection, and repair services across Ohio. Trusted roofing solutions for Ohio homeowners with lasting quality." />
                 <meta name='keywords' content='Ultimates Roofing llc, Ultimates Roofing, Best Roofing design in columbus,ohio, Best Roofing Companies in columbus ohio, ultimates roof replacement near me, best roofing designs for small houses, best roofing drip edge, best roof columbus, best roofing company near me, ultimates roof replacement columbus ohio, 
                 best roofing company, ultimates roof repair columbus ohio, affordable roof, eplacement services in columbus,ohio, luxury home roofing solutions near me, roof repair, Roofer near me, roofing repairs near me, roofing sheet' />
                 <meta name="author" content="Ultimates Roofing LLC" />

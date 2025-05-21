@@ -1,0 +1,41 @@
+.who-we-are-section {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.who-description {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.who-img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+/* Tablet View */
+@media (max-width: 991px) {
+  .who-we-are-section {
+    margin: 40px 1rem;
+  }
+
+  .who-description {
+    font-size: 0.95rem;
+  }
+
+  .who-img {
+    max-height: 50vh;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 575px) {
+  .who-img {
+    max-height: 40vh;
+  }
+}

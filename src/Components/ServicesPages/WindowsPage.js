@@ -17,9 +17,10 @@ function WindowsPage() {
     return (
         <div>
             <Helmet>
-                <title>Ultimates Roofing LLC - Windows</title>
+                <title>Professional Window Installation & Replacement Services in Ohio | Ultimates Roofing LLC</title>
                 <link rel="canonical" href="https://www.ultimatesroofing.com/windows" />
-                <meta name="description" content="Upgrade your property with Ultimates Roofing LLC's expert window services. From installations to replacements, we provide high-quality window solutions tailored to your needs." />
+                <meta name="description" 
+                content="Upgrade your property with Ultimates Roofing’s expert window services across Ohio. From installation to replacement, we deliver high-quality window solutions tailored for you." />
                 <meta name='keywords' content='Ultimates Roofing llc, Ultimates Roofing, Best Roofing design in columbus,ohio, Best Roofing Companies in columbus ohio, ultimates roof replacement near me, best roofing designs for small houses, best roofing drip edge, best roof columbus, best roofing company near me, ultimates roof replacement columbus ohio, 
                 best roofing company, ultimates roof repair columbus ohio, affordable roof, eplacement services in columbus,ohio, luxury home roofing solutions near me, roof repair, Roofer near me, roofing repairs near me, roofing sheet' />
                 <meta name="author" content="Ultimates Roofing LLC" />

@@ -61,7 +61,7 @@ function HomePage() {
   return (
     <div>
       <Helmet>
-        <title>Ultimates Roofing LLC - Home</title>
+        <title>Top Residential & Commercial Roofing Company Across Ohio | Ultimates Roofing LLC</title>
         <link rel="canonical" href="https://www.ultimatesroofing.com/home" />
         <meta
           name="description"
@@ -84,22 +84,21 @@ function HomePage() {
       {/*   About us  */}
       <About></About>
 
-      {/**  Mission, Value and Vision Cards */}
 
-
-      {/**    values */}
-      <ValueCardsComponent />
-
-      {/**  Commitment */}
-      <CommitmentComponent />
 
       {/* project  */}
       <OurProjects></OurProjects>
 
+
+      {/**  Commitment */}
+      <CommitmentComponent />
+
+
+      {/**    values */}
+      <ValueCardsComponent />
+      
       {/**    videos */}
       <VideosComponent />
-
-
 
       {/**    logo slider */}
       <LogosComponent />

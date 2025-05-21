@@ -4,13 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./OurProjects.css";
 
 // Image imports
-import com1 from "../../../assets/ServicesPagesImages/Commercial1.jpg";
-import com2 from "../../../assets/ServicesPagesImages/Commercial2.jpg";
-import com3 from "../../../assets/ServicesPagesImages/Commercial3.png";
-import com4 from "../../../assets/ServicesPagesImages/Commercial8.png";
-import res1 from "../../../assets/ServicesPagesImages/ResidentialRoofing.png";
-import res2 from "../../../assets/ServicesPagesImages/RoofsShining1.png";
-import res3 from "../../../assets/ServicesPagesImages/Gutters3.png";
+import com1 from "../../../assets/ServicesPagesImages/Siding3.png";
+import com2 from "../../../assets/ServicesPagesImages/Siding2.png";
+import com3 from "../../../assets/ServicesPagesImages/Siding1.png";
+
+import res1 from "../../../assets/Ouproject/Best_Roofing_services_near_me_Ohio_ultimatesroofing.png";
+import res2 from "../../../assets/Ouproject/Residential_roofing_services_Ohio_ultimates roofing.jpg";
+import res3 from "../../../assets/Ouproject/Residential_roofing_services_Columbus_Ohio.jpg";
 
 const filters = [
   { label: "All", value: "*" },
@@ -94,15 +94,15 @@ const OurProjects = () => {
 
   return (
     <section id="projects" className="section projects-section">
-      <Container>
-        <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center mb-5 gap-lg-5 gap-2 headerProject">
+      
+        <div className="d-flex flex-column flex-xl-row justify-content-between align-items-center mb-5 headerProject">
           <div className="">
           
             <h3 className="section-title">
               Explore Our Latest Projects 
             </h3>
           </div>
-          <ul className="project-filters isotope-filters my-3">
+          <ul className="project-filters isotope-filters my-3 justify-content-xl-end">
             {filters.map((filter, index) => (
               <li
                 key={index}
@@ -158,7 +158,7 @@ const OurProjects = () => {
             </div>
           ))}
         </div>
-      </Container>
+     
 
       {/* Modal for big image */}
       {modalProject && (

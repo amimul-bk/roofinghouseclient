@@ -1,118 +1,136 @@
 import "./Team.css";
-import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaTwitter, FaFacebookF } from "react-icons/fa";
+import  manager from "../../../assets/TeamPageImages/Akash.jpg"
+import  ceo from "../../../assets/TeamPageImages/Corey.jpg"
+import  other from "../../../assets/TeamPageImages/Team.jpg"
+
+
 
 const teamMembers = [
   {
-    name: "Gustavo Workman",
-    position: "CEO",
-    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg"
+    name: "Akash Hossan",
+    position: "Project Manager",
+    email: "sara@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: manager,
   },
   {
-    name: "Gustavo Workman",
+    name: "Corey Crawford",
     position: "CEO",
-    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET4.jpg"
+    email: "gustavo@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: ceo,
+  },
+  
+{
+    name: "Liam Carter",
+    position: "Lead Developer",
+    email: "liam@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: other,
   },
   {
-    name: "Gustavo Workman",
-    position: "CEO",
-    image: "https://images.unsplash.com/photo-1603969409447-ba86143a03f6?fm=jpg&q=60&w=3000"
+    name: "Emily Watson",
+    position: "Project Manager",
+    email: "emily@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: other,
   },
   {
-    name: "Gustavo Workman",
-    position: "CEO",
-    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET3.jpg"
+    name: "Noah Blake",
+    position: "UI/UX Designer",
+    email: "noah@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: other ,
   },
   {
-    name: "Gustavo Workman",
-    position: "CEO",
-    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET4.jpg"
+    name: "Olivia Smith",
+    position: "Business Analyst",
+    email: "olivia@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: other ,
+  },
+  {
+    name: "Ethan James",
+    position: "Software Engineer",
+    email: "ethan@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: other ,
+  },
+  {
+    name: "Sophia Green",
+    position: "HR Manager",
+    email: "sophia@company.com",
+    phone: "+1234567890",
+    linkedin: "#",
+    twitter: "#",
+    facebook: "#",
+    image: other ,
   }
 ];
 
-const TeamSection = () => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null); 
 
+
+const TeamSection = () => {
   return (
-    <div className="bg-white">
-      <div className="container py-5">
-        <h2 className="text-center fw-bold mb-4 teamhead text-black">Dream team</h2>
-        <div className="position-relative">
-          <Swiper
-            modules={[Navigation, Pagination]}
-            onBeforeInit={(swiper) => {
-              if (swiper.params.navigation) {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
-              }
-            }}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current
-            }}
-            pagination={{ clickable: true }}
-            loop={true}
-            spaceBetween={30}
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-                spaceBetween: 20
-              },
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 30
-              },
-              840: {
-                slidesPerView: 3,
-                spaceBetween: 30
-              },
-              1150: {
-                slidesPerView: 4,
-                spaceBetween: 40
-              }
-            }}
-            className="team-swiper"
-          >
-            {teamMembers.map((member, index) => (
-              <SwiperSlide key={index} className="d-flex justify-content-center onhover bg-color">
-                <div className="card border-0 text-center bg-color">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="img-fluid team-member-image mx-auto"
-                  />
-                  <h5 className="fw-bold mt-3 mb-1 text-black font">{member.name}</h5>
-                  <p className="mb-0 text-black font">{member.position}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="btn d-flex justify-content-end mt-3 swiper-nav-wrapper">
-            <div className="swiper-button-prevs me-3" ref={prevRef}>
+    <div className="bg-white team-section">
+      <h2 className="text-center mb-5 teamhead text-black">Our Team</h2>
+      <div className="row gx-3 gy-3"> {/* gx-1 for 0.5rem horizontal gap */}
+        {teamMembers.map((member, index) => (
+          <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
+            <div className="card team-card text-center w-100">
               <img
-                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg"
-                className="arrow-left"
-                alt="Prev"
+                src={member.image}
+                alt={member.name}
+                className="img-fluid team-member-image mx-auto"
               />
-            </div>
-            <div className="swiper-button-nexts" ref={nextRef}>
-              <img
-                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg"
-                className="arrow-right"
-                alt="Next"
-              />
+              <h5 className="fw-bold mt-3 mb-1 text-black font">{member.name}</h5>
+              <p className="mb-1 text-muted font">{member.position}</p>
+              <div className="team-info mb-2">
+                <p className="mb-1 small"><FaEnvelope className="me-2 red-bg" />{member.email}</p>
+                <p className="mb-1 small"><FaPhoneAlt className="me-2 red-bg" />{member.phone}</p>
+              </div>
+              <div className="d-flex justify-content-center gap-2 mt-2">
+                <a href={member.linkedin} className="social-icon" target="_blank" rel="noreferrer">
+                  <FaLinkedin />
+                </a>
+                <a href={member.twitter} className="social-icon" target="_blank" rel="noreferrer">
+                  <FaTwitter />
+                </a>
+                <a href={member.facebook} className="social-icon" target="_blank" rel="noreferrer">
+                  <FaFacebookF />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default TeamSection;
+

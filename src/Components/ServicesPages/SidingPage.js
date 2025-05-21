@@ -31,9 +31,10 @@ function SidingPage() {
     return (
         <div>
             <Helmet>
-                <title>Ultimates Roofing LLC - Siding</title>
+                <title>Professional Siding Installation & Repair Services in Ohio | Ultimates Roofing LLC</title>
                 <link rel="canonical" href="https://www.ultimatesroofing.com/siding" />
-                <meta name="description" content="Ultimates Roofing LLC offers top-quality siding solutions. Enhance the aesthetics and durability of your property with our expert siding installations and repairs." />
+                <meta name="description" 
+content="Ultimates Roofing offers top-notch siding solutions to ensure proper drainage and protect your property with expert siding installations and repairs across Ohio." />
                 <meta name='keywords' content='Ultimates Roofing llc, Ultimates Roofing, Best Roofing design in columbus,ohio, Best Roofing Companies in columbus ohio, ultimates roof replacement near me, best roofing designs for small houses, best roofing drip edge, best roof columbus, best roofing company near me, ultimates roof replacement columbus ohio, 
                 best roofing company, ultimates roof repair columbus ohio, affordable roof, eplacement services in columbus,ohio, luxury home roofing solutions near me, roof repair, Roofer near me, roofing repairs near me, roofing sheet' />
                 <meta name="author" content="Ultimates Roofing LLC" />

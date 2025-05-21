@@ -25,19 +25,19 @@ const services = [
   {
     image: SidingEnhancement,
     title: 'Siding Enhancements',
-    description: "Improve your home's curb appeal with professional siding services in Columbus, Ohio. We offer a perfect fusion of stylish, durable siding solutions to fit your property needs.",
+    description: "Improve your home's curb appeal with professional siding services in Ohio. We offer a perfect fusion of stylish, durable siding solutions to fit your property needs.",
     path: '/siding-enhancements',
   },
   {
     image: GutterSystems,
     title: 'Gutter Systems',
-    description: "Keep your property safe with reliable gutter systems in Columbus, OH. Our expert team installs and maintains gutters that protect your home from water damage.",
+    description: "Keep your property safe with reliable gutter systems in Ohio. Our expert team installs and maintains gutters that protect your home from water damage.",
     path: '/gutter-systems',
   },
   {
     image: WindowServices,
     title: 'Window Services',
-    description: 'Upgrade your property with high-quality window services in Columbus, Ohio. We provide expert installation and repair for energy-efficient, stylish windows.',
+    description: 'Upgrade your property with high-quality window services in Ohio. We provide expert installation and repair for energy-efficient, stylish windows.',
     path: '/window-services',
   },
 ];
@@ -47,7 +47,7 @@ function ServiceCardsComponent() {
 
   return (
     <div className='cards'>
-      <Container>
+    
         <div className='section'>
           <h1 className='service-heading'>Our Services</h1>
           <p className='service-text'>
@@ -78,7 +78,7 @@ function ServiceCardsComponent() {
             </Col>
           ))}
         </Row>
-      </Container>
+     
     </div>
   );
 }

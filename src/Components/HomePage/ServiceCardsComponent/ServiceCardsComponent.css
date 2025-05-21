@@ -7,6 +7,22 @@
   font-family: hauora-medium;
   margin-bottom: 50px;
   overflow-x: hidden;
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+  }
 }
 
 .section {
@@ -19,14 +35,13 @@
 }
 
 .service-heading {
- font-size: calc(1.5rem + 1.5vw);
+  font-size: calc(1.5rem + 1.5vw);
   margin-bottom: 1rem;
   font-family: hauora-medium;
 }
 
 .service-text {
   font-family: hauora-medium;
-
   font-size: 1rem;
   letter-spacing: 1px;
   max-width: 800px;
@@ -34,8 +49,7 @@
 
 .hover-effect {
   width: 100%;
-  max-width: 28rem;
-
+  
   overflow: hidden;
   border: none;
   border-radius: 5px;
@@ -108,17 +122,11 @@
   cursor: pointer;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .icon-circle {
-
     width: 26px;
     height: 26px;
-
-  }
-
-  .cards {
-
-    margin: 40px 5px;
   }
 
   .learnmore-btn {
@@ -127,23 +135,24 @@
 
   .card-text {
     font-size: 16px;
-
   }
 
   .service-text {
     font-size: 16px;
   }
+   .cards {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
 }
 
 @media (max-width: 468px) {
-  .service-heading {
-    font-size: 23px;
-  }
-
+  
   .card-title {
-
     font-size: 1rem;
-
   }
-
+   .cards {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
 }
