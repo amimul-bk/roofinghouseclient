@@ -1,8 +1,24 @@
+@font-face {
+  font-family: hauora-medium;
+  src: url(../../../../../public/Hauora-Medium.ttf);
+}
+
+.font {
+  font-family: hauora-medium !important;
+}
+
 .who-we-are-section {
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+   font-family: hauora-medium !important;
+}
+
+.whoHead{
+   font-size: calc(1.5rem + 1.5vw);
 }
 
 .who-description {
@@ -13,9 +29,8 @@
 
 .who-img {
   width: 100%;
-  height: auto;
-  max-height: 60vh;
-  object-fit: contain;
+  height: 70vh;
+  
 }
 
 /* Tablet View */

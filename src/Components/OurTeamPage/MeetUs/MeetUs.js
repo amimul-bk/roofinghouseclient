@@ -7,16 +7,16 @@ const MeetUs = () => {
   return (
     <div className="meet-us-section d-flex align-items-center">
       <div className="overlay"></div>
-      <Container className="text-white position-relative">
-        <h1 className="fw-bold mb-3">Team</h1>
-        <div className="breadcrumb-custom">
-          <Link to="/" className="text-white text-decoration-none">Home</Link>
+      <div className="text-white position-relative font title-main">
+        <h1 className="mb-3 font mainHeading">Team</h1>
+        <div className="breadcrumb-custom ">
+          <Link to="/" className="text-white text-decoration-none font">Home</Link>
           <span className="mx-2 text-white">&gt;</span>
-          <Link to="/about" className="text-white text-decoration-none">About</Link>
+          <Link to="/about" className="text-white text-decoration-none font">About</Link>
           <span className="mx-2 text-white">&gt;</span>
-       <Link to="/our-team" className="text-white text-decoration-none">Team</Link>
+       <Link to="/our-team" className="text-white text-decoration-none font">Team</Link>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

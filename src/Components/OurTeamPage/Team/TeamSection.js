@@ -96,12 +96,12 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <div className="bg-white team-section">
-      <h2 className="text-center mb-5 teamhead text-black">Our Team</h2>
+    <div className="bg-white team-section font">
+      <h2 className="text-center mb-5 teamhead text-black font">Our Team</h2>
       <div className="row gx-3 gy-3"> {/* gx-1 for 0.5rem horizontal gap */}
         {teamMembers.map((member, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
-            <div className="card team-card text-center w-100">
+            <div className="card team-card text-center w-100 font">
               <img
                 src={member.image}
                 alt={member.name}
@@ -110,8 +110,8 @@ const TeamSection = () => {
               <h5 className="fw-bold mt-3 mb-1 text-black font">{member.name}</h5>
               <p className="mb-1 text-muted font">{member.position}</p>
               <div className="team-info mb-2">
-                <p className="mb-1 small"><FaEnvelope className="me-2 red-bg" />{member.email}</p>
-                <p className="mb-1 small"><FaPhoneAlt className="me-2 red-bg" />{member.phone}</p>
+                <p className="mb-1 small font"><FaEnvelope className="me-2 red-bg" />{member.email}</p>
+                <p className="mb-1 small font"><FaPhoneAlt className="me-2 red-bg" />{member.phone}</p>
               </div>
               <div className="d-flex justify-content-center gap-2 mt-2">
                 <a href={member.linkedin} className="social-icon" target="_blank" rel="noreferrer">

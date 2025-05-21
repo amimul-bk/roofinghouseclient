@@ -14,9 +14,7 @@
 .headerProject {
   margin-bottom: 8px;
    width: 100%;
-   margin-left: 1rem;
- 
-}
+  }
 
 .section-title {
   font-size: calc(1.75rem + 1.5vw);
@@ -25,8 +23,7 @@
   text-align: left;
   display: block; /* Changed from flex to block */
   margin-bottom: 1rem;
-  margin-left: 1rem;
-}
+ }
 
 /* Filter Buttons */
 .project-filters {
