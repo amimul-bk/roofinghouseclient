@@ -97,7 +97,14 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <div className="bg-white team-section font">
-      <h2 className="text-center mb-5 teamhead text-black font">Our Team</h2>
+
+       <div className="mb-5">
+         <h2 className="text-center text-black font teamhead">Our Team</h2>
+      <p className="mx-auto text-center subtitle">
+        At Ultimates Roofing LLC, we believe that every home and business deserves the highest quality roofing solutions. Established 2022
+      </p>
+       </div>
+     
       <div className="row gx-3 gy-3"> {/* gx-1 for 0.5rem horizontal gap */}
         {teamMembers.map((member, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">

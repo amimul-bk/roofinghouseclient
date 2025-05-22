@@ -20,7 +20,7 @@ const About = () => {
                Ultimates Roofing LLC presents a comprehensive array of Roofing services solutions​, encompassing new roof installations,
                 meticulous roof maintenance, expert roof repairs, and advanced re-roofing solutions for Residential and Commercial ventures. 
                 Our expertise extends to homes, offices, warehouses, and multi-family dwellings. 
-               Over the 2+ years, clients have recognised and valued the talented and professional roofing service synonymous with us.
+               Over the 12+ years, clients have recognised and valued the talented and professional roofing service synonymous with us.
               </p>
               <Button
                 onClick={() => {

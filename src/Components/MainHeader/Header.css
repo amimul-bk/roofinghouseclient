@@ -31,13 +31,8 @@
 }
 
 .logoImg {
-  width: 140px;
+  width: 167px;
   transition: width 0.2s;
-}
-@media (max-width: 991px) {
-  .logoImg {
-    width: 120px;
-  }
 }
 
 .irs-nav .nav-link {
@@ -341,6 +336,12 @@
 .fontLight {
   font-family: hauora-light !important;
 }
+.custom-container {
+  margin: 0 4rem;
+  padding: 0;
+}
+
+
 @media (max-width: 1024px) {
   .mega-item,
   .nav-link[href="/contact"] {
@@ -403,5 +404,16 @@
   }
   .irs-nav .nav-item.dropdown.show .nav-link {
     color: var(--irs-red) !important;
+  }
+}
+@media (max-width: 991px) {
+  .logoImg {
+    width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .custom-container {
+    margin: 0 1rem;
   }
 }

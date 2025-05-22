@@ -16,6 +16,11 @@
   margin-block: 50px;
   margin-inline: 3rem;
 }
+.subtitle{
+  font-size: 20px;
+  font-family: hauora-medium !important;
+  max-width: 700px;
+}
 .red-bg{
   color: #b22335;
 }
