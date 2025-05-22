@@ -34,12 +34,16 @@
   width: 167px;
   transition: width 0.2s;
 }
-
+.irs-nav{
+  gap: 5px;
+  }
 .irs-nav .nav-link {
+text-transform: lowercase;
   color: var(--irs-gray);
-  font-size: var(--nav-size);
+  /* font-size: var(--nav-size); */
+  font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 0.625rem 1rem;
   transition: color 0.2s;
 }
@@ -351,6 +355,7 @@
     height: 100vh;
     width: auto;
     overflow: hidden auto;
+    padding-top: 15px;
   }
   .mega-menu .dropdown-menu {
     width: 100% !important;
@@ -415,5 +420,8 @@
 @media (max-width: 640px) {
   .custom-container {
     margin: 0 1rem;
+  }
+.irs-nav{
+  gap: 2px;
   }
 }

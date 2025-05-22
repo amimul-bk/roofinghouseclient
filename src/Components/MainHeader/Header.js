@@ -97,8 +97,8 @@ export default function Header() {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="irs-nav" />
-        <Navbar.Collapse id="irs-nav" className="scrollMobileNav">
-          <Nav className="mx-auto irs-nav">
+        <Navbar.Collapse id="irs-nav" className="scrollMobileNav ">
+          <Nav className="mx-auto irs-nav ">
             {Object.entries(menus).map(([menuLabel, { items, cols, cta }]) => {
               const columns = chunk(items, cols);
               return (
