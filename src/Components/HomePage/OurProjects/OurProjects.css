@@ -12,8 +12,7 @@
 
 /* Section Headings */
 .headerProject {
-  margin-bottom: 8px;
-   width: 100%;
+  width: 100%;
   }
 
 .section-title {
@@ -29,9 +28,7 @@
 .project-filters {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
   display: flex;
- 
   flex-wrap: wrap;
   gap: 12px;
 }

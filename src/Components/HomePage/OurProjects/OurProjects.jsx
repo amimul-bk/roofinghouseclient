@@ -102,7 +102,7 @@ const OurProjects = () => {
               Explore Our Latest Projects 
             </h3>
           </div>
-          <ul className="project-filters isotope-filters my-3 justify-content-xl-end">
+          <ul className="project-filters isotope-filters my-3 justify-content-xl-end justify-content-center">
             {filters.map((filter, index) => (
               <li
                 key={index}

@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 const MeetUs = () => {
   return (
-    <div className="meet-us-section d-flex align-items-center">
-      <div className="overlay"></div>
-      <div className="text-white position-relative font title-main">
+    <div className="meet-us-section d-flex align-items-center position-relative">
+      <div className="overlay position-absolute"></div>
+      <div className="text-white position-relative font title-main" style={{ zIndex: 2 }} >
         <h1 className="mb-3 font mainHeading">Team</h1>
         <div className="breadcrumb-custom ">
           <Link to="/" className="text-white text-decoration-none font">Home</Link>

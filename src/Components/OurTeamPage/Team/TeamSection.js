@@ -1,10 +1,11 @@
 import "./Team.css";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaTwitter, FaFacebookF } from "react-icons/fa";
-import  manager from "../../../assets/TeamPageImages/Akash.jpg"
-import  ceo from "../../../assets/TeamPageImages/Corey.jpg"
-import  other from "../../../assets/TeamPageImages/Team.jpg"
+import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import manager from "../../../assets/TeamPageImages/Akash.jpg"
+import ceo from "../../../assets/TeamPageImages/Corey.jpg"
+import other from "../../../assets/TeamPageImages/Team.jpg"
 
 
 
@@ -15,7 +16,7 @@ const teamMembers = [
     email: "sara@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
     image: manager,
   },
@@ -25,18 +26,18 @@ const teamMembers = [
     email: "gustavo@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
     image: ceo,
   },
-  
-{
+
+  {
     name: "Liam Carter",
     position: "Lead Developer",
     email: "liam@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
     image: other,
   },
@@ -46,7 +47,7 @@ const teamMembers = [
     email: "emily@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
     image: other,
   },
@@ -56,9 +57,9 @@ const teamMembers = [
     email: "noah@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
-    image: other ,
+    image: other,
   },
   {
     name: "Olivia Smith",
@@ -66,9 +67,9 @@ const teamMembers = [
     email: "olivia@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
-    image: other ,
+    image: other,
   },
   {
     name: "Ethan James",
@@ -76,9 +77,9 @@ const teamMembers = [
     email: "ethan@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
-    image: other ,
+    image: other,
   },
   {
     name: "Sophia Green",
@@ -86,9 +87,9 @@ const teamMembers = [
     email: "sophia@company.com",
     phone: "+1234567890",
     linkedin: "#",
-    twitter: "#",
+    intagram: "#",
     facebook: "#",
-    image: other ,
+    image: other,
   }
 ];
 
@@ -98,13 +99,13 @@ const TeamSection = () => {
   return (
     <div className="bg-white team-section font">
 
-       <div className="mb-5">
-         <h2 className="text-center text-black font teamhead">Our Team</h2>
-      <p className="mx-auto text-center subtitle">
-        At Ultimates Roofing LLC, we believe that every home and business deserves the highest quality roofing solutions. Established 2022
-      </p>
-       </div>
-     
+      <div className="mb-5">
+        <h2 className="text-center text-black font teamhead">Our Team</h2>
+        <p className="mx-auto text-center subtitle">
+          At Ultimates Roofing LLC, we believe that every home and business deserves the highest quality roofing solutions. Established 2022
+        </p>
+      </div>
+
       <div className="row gx-3 gy-3"> {/* gx-1 for 0.5rem horizontal gap */}
         {teamMembers.map((member, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex">
@@ -124,11 +125,12 @@ const TeamSection = () => {
                 <a href={member.linkedin} className="social-icon" target="_blank" rel="noreferrer">
                   <FaLinkedin />
                 </a>
-                <a href={member.twitter} className="social-icon" target="_blank" rel="noreferrer">
-                  <FaTwitter />
-                </a>
+
                 <a href={member.facebook} className="social-icon" target="_blank" rel="noreferrer">
                   <FaFacebookF />
+                </a>
+                <a href={member.intagram} className="social-icon" target="_blank" rel="noreferrer">
+                  <FaInstagram />
                 </a>
               </div>
             </div>

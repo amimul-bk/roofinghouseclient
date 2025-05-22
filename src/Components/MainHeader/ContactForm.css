@@ -1,7 +1,9 @@
 .modalpopup{
      z-index: 1100;
 }
-
+.form-label{
+    text-align: start ;
+}
 .quote-form-formik {
     background-color: #ffffff;
     padding: 2rem;

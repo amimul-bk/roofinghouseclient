@@ -80,7 +80,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     <Row className="mb-3">
                         <Col md={6}>
                             <BootstrapForm.Group controlId="firstName">
-                                <BootstrapForm.Label className="fontHauora">
+                                <BootstrapForm.Label className="fontHauora text-start justify-content-start d-flex">
                                     First Name <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
@@ -98,7 +98,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
                         </Col>
                         <Col md={6}>
                             <BootstrapForm.Group controlId="lastName">
-                                <BootstrapForm.Label className="fontHauora">
+                                <BootstrapForm.Label className="fontHauora text-start justify-content-start d-flex">
                                     Last Name <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
@@ -119,7 +119,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     <Row className="mb-3">
                         <Col md={6}>
                             <BootstrapForm.Group controlId="phoneNumber">
-                                <BootstrapForm.Label className="fontHauora">
+                                <BootstrapForm.Label className="fontHauora text-start justify-content-start d-flex">
                                     Phone Number <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
@@ -137,7 +137,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
                         </Col>
                         <Col md={6}>
                             <BootstrapForm.Group controlId="address">
-                                <BootstrapForm.Label className="fontHauora">
+                                <BootstrapForm.Label className="fontHauora text-start justify-content-start d-flex">
                                     Address <span className="text-danger">*</span>
                                 </BootstrapForm.Label>
                                 <Field
@@ -158,7 +158,7 @@ export default function ContactForm({ source = "modal", handleClose }) {
                     <Row className="mb-3">
                         <Col>
                             <BootstrapForm.Group controlId="message">
-                                <BootstrapForm.Label className="fontHauora">
+                                <BootstrapForm.Label className="fontHauora text-start justify-content-start d-flex">
                                     Message (Optional)
                                 </BootstrapForm.Label>
                                 <Field
