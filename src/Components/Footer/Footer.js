@@ -67,7 +67,8 @@ const Footer = () => {
       <img src={logo} alt="Company Logo" className="img-fluid" />
     </div>
     <p className="firstfootertext">
-      Welcome to Ultimates Roofing LLC, your creative marketing partner. We turn vision into measurable success with innovative strategies and data-driven solutions.
+      Ultimates Roofing are protectors of homes & builders of trust partner — delivering quality roofing 
+      solutions with integrity, craftsmanship, and pride.
     </p>
     <ul className="list-unstyled d-flex gap-2 mt-4">
       <li><Link to="https://www.facebook.com/UltimateSRoofing/" target="_blank" className="d-flex align-items-center justify-content-center bg-dark text-white rounded-circle social-icon" style={{ width: "38px", height: "38px" }}><FaFacebook /></Link></li>
