@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import './ValueCardsComponent.css';
 import ReliableExpertise from '../../../assets/HomePageImages/ReliableExpertise.png';
 import CraftedExcellence from '../../../assets/HomePageImages/CraftedExcellence.png';

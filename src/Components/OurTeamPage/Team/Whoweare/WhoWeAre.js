@@ -1,6 +1,6 @@
 import React from 'react';
 import './WhoWeAre.css';
-import whoWeAreImage from '../../../../assets/TeamPageImages/Who_we_are_ultimatesroofingllc.png'; // replace with actual image path
+import whoWeAreImage from '../../../../assets/TeamPageImages/Who_we_are_ultimatesroofingllc.jpg'; // replace with actual image path
 
 const WhoWeAre = () => {
   return (

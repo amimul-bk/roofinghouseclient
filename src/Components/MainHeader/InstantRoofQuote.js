@@ -95,7 +95,7 @@ function InstantRoofQuote({ source, handleClose }) {
                     <Row className="names-roww">
                         <Col>
                             <Form.Group>
-                                <Form.Label className="label">
+                                <Form.Label className="label d-flex justify-content-start">
                                     First Name{" "}
                                     <span style={{ color: "red" }}>*</span>
                                 </Form.Label>
@@ -111,7 +111,7 @@ function InstantRoofQuote({ source, handleClose }) {
                         </Col>
                         <Col>
                             <Form.Group>
-                                <Form.Label className="label">
+                                <Form.Label className="label d-flex justify-content-start">
                                     Last Name{" "}
                                     <span style={{ color: "red" }}>*</span>
                                 </Form.Label>
@@ -130,7 +130,7 @@ function InstantRoofQuote({ source, handleClose }) {
                     <Row className="names-roww">
                         <Col>
                             <Form.Group>
-                                <Form.Label className="label">
+                                <Form.Label className="label d-flex justify-content-start">
                                     Phone Number{" "}
                                     <span style={{ color: "red" }}>*</span>
                                 </Form.Label>
@@ -148,7 +148,7 @@ function InstantRoofQuote({ source, handleClose }) {
                     {source === "message" ? (
                         <Row className="names-roww">
                             <Form.Group>
-                                <Form.Label className="label">
+                                <Form.Label className="label d-flex justify-content-start">
                                     Message
                                 </Form.Label>
                                 <Form.Control

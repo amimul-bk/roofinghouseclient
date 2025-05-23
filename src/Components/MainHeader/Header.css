@@ -20,6 +20,14 @@
 .color {
   color: #b22335;
 }
+.form-btn{
+  background-color:#b22335 ;
+}
+.form-btn:hover{
+   background-color: #3d3b6d !important;
+  box-shadow: 0 8px 20px #3d3b6d !important;
+  transform: scale(1.05);
+}
 /* ── Navbar Base ─────────────────────── */
 
 .irs-navbar {

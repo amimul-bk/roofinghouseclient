@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Col, Row, Container } from 'react-bootstrap';
+
+import { Card, Col, Row, } from 'react-bootstrap';
 import HomeRoofing from '../../../assets/HomePageImages/Residential_roofing_services_ohio_USA_ultimatesroofingllc.jpg';
 import CommercialRoofing from '../../../assets/HomePageImages/Commercial_roofing_service_ohio_USA_ultimatesroofingllc.jpg';
 import SidingEnhancement from '../../../assets/HomePageImages/Siding_enhancements_service_ohio_USA_ultimatesroofingllc.jpg';

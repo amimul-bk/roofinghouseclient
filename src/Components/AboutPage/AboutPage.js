@@ -105,7 +105,7 @@ function AboutPage() {
         <p className='about-us'><span style={{ color: "#B22335", fontWeight: "bold" }}>I</span> About Us</p>
         <h2 className='about-page-heading'>Ultimates Roofing LLC</h2>
         <p className='about-page-text'>At Ultimates Roofing LLC, we believe that every home and business deserves the highest quality roofing solutions.
-           Established 2022, we have proudly served across Ohio and surrounding areas, earning a reputation for excellence in the Roofing and Siding industry.</p>
+           Established 2019, we have proudly served across Ohio and surrounding areas, earning a reputation for excellence in the Roofing and Siding industry.</p>
         <p className='about-page-text'>From comprehensive roof installation and replacement services to meticulous long-term repairs, Ultimates Roofing is your all-encompassing solution. With nearly a decade of dedicated expertise in the industry, our seasoned roofing contractor ensures that your project is not just a task but a commitment to excellence, providing you with the utmost peace of mind throughout the process.</p>
 
         <div className='image-container'>

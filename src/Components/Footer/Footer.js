@@ -131,7 +131,7 @@ const Footer = () => {
 
 
           <div className="text-center small my-0 py-0">
-            <p className="my-1">© 2021 <a href="https://www.ultimatesroofing.com/" className="text-white text-decoration-none small link-hover">Ultimates Roofing LLC.</a></p>
+            <p className="my-1">© 2019-2025 <a href="https://www.ultimatesroofing.com/" className="text-white text-decoration-none small link-hover">Ultimates Roofing LLC.</a></p>
           </div>
 
         </div>

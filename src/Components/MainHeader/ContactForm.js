@@ -23,7 +23,7 @@ const contactFormValidationSchema = Yup.object({
 
 export default function ContactForm({ source = "modal", handleClose }) {
     const url =
-        "https://www.ultimatesroofing.com/ultimates-backend/ultimates/customer/register";
+        "http://72.167.150.246:8081/ultimates/customer/register";
 
     const handleSubmit = async (
         values,

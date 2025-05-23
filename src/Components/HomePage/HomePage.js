@@ -1,21 +1,16 @@
 import React, { useEffect, useState } from "react";
-
 import { Col, Row, Toast, Modal } from "react-bootstrap";
-import videoSource from "../../assets/HomePageImages/Best_Roofing_Company_in_Across_OhioUltimatesRoofingLLC.mp4";
 import "./HomePage.css";
 import PlayStore from "../../assets/HomePageImages/PlayStore.png";
 import AppStore from "../../assets/HomePageImages/AppStore.png";
 import Mobile from "../../assets/HomePageImages/Mobile.png";
 import ServiceCardsComponent from "./ServiceCardsComponent/ServiceCardsComponent";
-import CardsComponent from "./CardsComponent/CardsComponent";
 import CommitmentComponent from "./CommitmentComponent/CommitmentComponent";
 import ValueCardsComponent from "./ValueCardsComponent/ValueCardsComponent";
 import VideosComponent from "./VideosComponent/VideosComponent";
 import LogosComponent from "./LogosComponent/LogosComponent";
-import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import InstantRoofQuote from "../MainHeader/InstantRoofQuote";
-import { IoMdPhonePortrait } from "react-icons/io";
 import Video from "./Vedio/Video";
 import About from "./Aboutsec/About";
 import OurProjects from "./OurProjects/OurProjects";
@@ -23,9 +18,9 @@ import OurProjects from "./OurProjects/OurProjects";
 
 
 function HomePage() {
-  const navigate = useNavigate();
+ 
   const [toast, setToast] = useState(false);
-  const [toast1, setToast1] = useState(true);
+  
   const [showModel, setShowModal] = useState(false);
   const [showModel1, setShowModal1] = useState(false);
   const [toast2, setToast2] = useState(false);
@@ -45,10 +40,6 @@ function HomePage() {
 
     return () => clearInterval(interval);
   }, [toast]);
-
-  const handleToastClose = () => {
-    setToast1(false);
-  };
 
   const handleCloseModal = () => {
     setShowModal(false);

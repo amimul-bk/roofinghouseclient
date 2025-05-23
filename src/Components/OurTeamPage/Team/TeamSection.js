@@ -3,7 +3,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import manager from "../../../assets/TeamPageImages/Akash.jpg"
+import manager from "../../../assets/TeamPageImages/Akash_Hossain_Founder.jpg"
 import ceo from "../../../assets/TeamPageImages/Corey_Crawford_Project_Manager.png"
 import jakaria from "../../../assets/TeamPageImages/Jakaria_Hossain_Founder_&_project_manager.png"
 import willam from "../../../assets/TeamPageImages/Willam_Galo.png"
@@ -29,17 +29,18 @@ const teamMembers = [
     name: "Jakaria Hossan",
     position: "Co-Founder & Project Manager",
     email: "ultimatesroofing98@gmail.com",
-    phone: "+1(614)357-7539",
+    phone: "+16147874476",
     linkedin: "https://www.linkedin.com/company/ultimatesroofing/",
     intagram: "https://www.instagram.com/ultimatesroofing/",
     facebook: "https://www.facebook.com/UltimateSRoofing/",
     image: jakaria,
   },
+  
   {
     name: "Corey Crawford",
     position: "Project Manager",
     email: "roofs@ultimatesroofing.com",
-    phone: "+1 (614) 357-7539",
+    phone: "+16148161883",
     linkedin: "https://www.linkedin.com/company/ultimatesroofing/",
     intagram: "https://www.instagram.com/ultimatesroofing/",
     facebook: "https://www.facebook.com/UltimateSRoofing/",
@@ -77,6 +78,16 @@ const teamMembers = [
     image: jahid,
   },
   {
+    name: "Ketie Elizabeth",
+    position: "office Administrator",
+    email: "roofs@ultimatesroofing.com",
+    phone: "+1 (614) 357-7539",
+    linkedin: "https://www.linkedin.com/company/ultimatesroofing/",
+    intagram: "https://www.instagram.com/ultimatesroofing/",
+    facebook: "https://www.facebook.com/UltimateSRoofing/",
+    image: other,
+  },
+  {
     name: " Nicole ",
     position: "Claims Expert ",
     email: "roofs@ultimatesroofing.com",
@@ -96,18 +107,8 @@ const teamMembers = [
     facebook: "https://www.facebook.com/UltimateSRoofing/",
     image: other,
   },
-  {
-    name: "Ketie Elizabeth",
-    position: "office Administrator",
-    email: "roofs@ultimatesroofing.com",
-    phone: "+1 (614) 357-7539",
-    linkedin: "https://www.linkedin.com/company/ultimatesroofing/",
-    intagram: "https://www.instagram.com/ultimatesroofing/",
-    facebook: "https://www.facebook.com/UltimateSRoofing/",
-    image: other,
-  },
+  
 ];
-
 
 
 const TeamSection = () => {

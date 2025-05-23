@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./OurProjects.css";
 
@@ -11,6 +10,7 @@ import com3 from "../../../assets/ServicesPagesImages/Siding1.png";
 import res1 from "../../../assets/Ouproject/Best_Roofing_services_near_me_Ohio_ultimatesroofing.png";
 import res2 from "../../../assets/Ouproject/Residential_roofing_services_Ohio_ultimates roofing.jpg";
 import res3 from "../../../assets/Ouproject/Residential_roofing_services_Columbus_Ohio.jpg";
+
 
 const filters = [
   { label: "All", value: "*" },
@@ -93,6 +93,7 @@ const OurProjects = () => {
   };
 
   return (
+    
     <section id="projects" className="section projects-section">
       
         <div className="d-flex flex-column flex-xl-row justify-content-between align-items-center mb-5 headerProject">
@@ -174,6 +175,7 @@ const OurProjects = () => {
         </div>
       )}
     </section>
+   
   );
 };
 
