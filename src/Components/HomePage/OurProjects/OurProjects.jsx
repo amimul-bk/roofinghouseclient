@@ -3,10 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./OurProjects.css";
 
 // Image imports
-import com1 from "../../../assets/ServicesPagesImages/Siding3.png";
-import com2 from "../../../assets/ServicesPagesImages/Siding2.png";
-import com3 from "../../../assets/ServicesPagesImages/Siding1.png";
-
+import com1 from "../../../assets/Ouproject/Commercial_roof_replacement_ultimatesroofing.jpg";
+import com2 from "../../../assets/Ouproject/Commercial_roofing_company_ultimatesroofing.jpg";
+import com3 from "../../../assets/Ouproject/commercial_roofing_service_ultimatesroofing.jpg";
 import res1 from "../../../assets/Ouproject/Best_Roofing_services_near_me_Ohio_ultimatesroofing.png";
 import res2 from "../../../assets/Ouproject/Residential_roofing_services_Ohio_ultimates roofing.jpg";
 import res3 from "../../../assets/Ouproject/Residential_roofing_services_Columbus_Ohio.jpg";

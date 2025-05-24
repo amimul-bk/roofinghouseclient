@@ -6,7 +6,7 @@ import { Button, Col, Row, Form, Spinner } from "react-bootstrap";
 function InstantRoofQuote({ source, handleClose }) {
     // API endpoint for form submission
     const url =
-        "https://www.ultimatesroofing.com/ultimates-backend/ultimates/customer/register";
+        "https://ultimatesroofing.com/api/ultimates/customer/register";
 
     const [errorMessage, setErrorMessage] = useState("");
     const [loading, setLoading] = useState(false);

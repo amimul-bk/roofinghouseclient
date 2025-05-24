@@ -32,7 +32,7 @@ const About = () => {
               </Button>
             </div>
           </Col>
-          <Col className='d-flex justify-content-lg-end'>
+          <Col className='d-flex justify-content-lg-end justify-content-center'>
             <img
               className="about-img"
               src={AboutHouse}

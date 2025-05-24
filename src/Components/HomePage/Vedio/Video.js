@@ -69,12 +69,12 @@ const Video = () => {
                   borderRadius: "0px",
                   position: "fixed",
                   right: "0",
-                  zIndex: "1000",
+                  zIndex: "1100",
                   
                 }}
                 onClose={handleToastClose}
                 >
-                <Toast.Header style={{ fontSize: "14px" }}>
+                <Toast.Header style={{ fontSize: "14px" ,  }}>
                   <strong className="me-auto">Need consultant's advice?</strong>
                 </Toast.Header>
                 <Toast.Body

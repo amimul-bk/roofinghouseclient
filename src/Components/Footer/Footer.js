@@ -120,7 +120,8 @@ const Footer = () => {
     </div>
     <ul className="list-unstyled mt-3">
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Contact</Link></li>
-      <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/our-team" className="text-white text-decoration-none small link-hover">Our Team</Link></li>
+      
+       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/our-team" className="text-white text-decoration-none small link-hover">Our Team</Link></li>
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/projects" className="text-white text-decoration-none small link-hover">Service Area</Link></li>
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Client Portal Login</Link></li>
       <li className="mb-2 d-flex gap-1"><BsCaretRightFill style={{ color: "#ff3b3b" }} /><Link to="/contact" className="text-white text-decoration-none small link-hover">Privacy Policy</Link></li>
