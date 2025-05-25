@@ -29,7 +29,7 @@ function ContactModal() {
             </div>
 
 
-            <Modal show={showModal} onHide={handleClose} centered className="modalpopup" >
+            <Modal show={showModal} onHide={handleClose} centered className="modalpopup d-flex justify-content-center" >
                 <Modal.Header closeButton>
                     <Modal.Title className="fontHauora"> Get Your Free Estimate </Modal.Title>
 

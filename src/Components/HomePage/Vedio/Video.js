@@ -123,7 +123,7 @@ const Video = () => {
         </div>
       </div>
        {/** Modal Component for request a call back */}
-            <Modal show={showModel} onHide={handleCloseModal} className="popupTwo">
+            <Modal show={showModel} onHide={handleCloseModal} className="popupTwo d-flex justify-content-center">
               <Modal.Header closeButton>
                 <Modal.Title>Request for a call back</Modal.Title>
               </Modal.Header>
@@ -131,7 +131,7 @@ const Video = () => {
             </Modal>
       
             {/** Modal Component1 for messagee */}
-            <Modal show={showModel1} onHide={handleCloseModal1} className="popupTwo">
+            <Modal show={showModel1} onHide={handleCloseModal1} className="popupTwo d-flex justify-content-center">
               <Modal.Header closeButton>
                 <Modal.Title>Leave a message to us</Modal.Title>
               </Modal.Header>

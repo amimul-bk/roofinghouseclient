@@ -234,8 +234,20 @@
     }
 
 }
+@media screen and (max-width: 430px) {
+  
+ 
+     .background-video-container {
+        margin-bottom: 114%;
+       
+    }
+     .floating-services-boxes {
+        top: 75vh;
+    }
 
-@media screen and (max-width: 380px) {
+ 
+}
+@media screen and (max-width: 390px) {
     .background-video-container {
         margin-bottom: 148%;
        
