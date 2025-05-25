@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet";
 
 function ReviewsPage() {
   const url =
-    "https://www.ultimatesroofing.com/ultimates-backend/ultimates/reviews";
+    "https://ultimatesroofing.com/api/ultimates/reviews";
   const timestamp = new Date().getTime();
  
   const apiUrlWithTimestamp = `${url}?timestamp=${timestamp}`;
